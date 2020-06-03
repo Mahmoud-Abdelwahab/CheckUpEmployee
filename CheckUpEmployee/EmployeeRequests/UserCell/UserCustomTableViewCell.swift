@@ -33,10 +33,19 @@ class UserCustomTableViewCell: UITableViewCell {
         // Initialization code
 
         // Add action to perform when the button is tapped
-        self.getDirectionBtnOutlet.addTarget(self, action: #selector(getDirectionButtonTapped(_:)), for: .touchUpInside)
+   
+        if( self.getDirectionBtnOutlet != nil ){
+            self.getDirectionBtnOutlet.addTarget(self, action: #selector(getDirectionButtonTapped(_:)), for: .touchUpInside)
+
+     
+        }else if( self.callMeBtnOutlet != nil){
+           
+                  self.callMeBtnOutlet.addTarget(self, action: #selector(callMeButtonTapped(_:)), for: .touchUpInside)
+        }else{
+             print("nilllll")
+        }
         
         
-          self.callMeBtnOutlet.addTarget(self, action: #selector(callMeButtonTapped(_:)), for: .touchUpInside)
         
     }
 
@@ -44,10 +53,10 @@ class UserCustomTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-        userImg.layer.cornerRadius=userImg.frame.width / 2
+       // userImg.layer.cornerRadius=userImg.frame.width / 2
     }
     
-    @objc func getDirectionButtonTapped(_ sender :UIButton){
+    @objc func getDirectionButtonTapped(_ sender: UIButton){
         // if the closure is defined (not nil)
         // then execute the code inside the getDirectionClosure closure
         getDirectionClosure?()

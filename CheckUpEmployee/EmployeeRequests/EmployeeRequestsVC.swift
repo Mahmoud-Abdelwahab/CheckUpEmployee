@@ -65,12 +65,35 @@ class EmployeeRequestsVC: UITableViewController {
           alert.addAction(okAction)
                 
           self.present(alert, animated: true, completion: nil)
+            
+            
+            //GoogleMaps
+//
+//            if (UIApplication.sharedApplication().canOpenURL(NSURL(string:"comgooglemaps://")!)) {
+//              UIApplication.sharedApplication().openURL(NSURL(string:
+//                  "comgooglemaps://?center=40.765819,-73.975866&zoom=14&views=traffic")!)
+//            } else {
+//              NSLog("Can't use Google Maps");
+//            }
+
+             
+
+            //Apple Maps
+
+            if (UIApplication.shared.canOpenURL(NSURL(string:"http://maps.apple.com")! as URL)) {
+                UIApplication.shared.openURL(NSURL(string:
+                "http://maps.apple.com/?daddr=San+Francisco,+CA&saddr=cupertino")as! URL)
+              NSLog("Can't use Apple Maps");
+            }
+            
+            
+            
         }
         
         
         cell.calMeClouser = { [unowned self] in
          
-            
+            print("Calling .........")
             if let url = URL(string: "tel://\(0881149060094)") {
                 UIApplication.shared.openURL(url)
             }
