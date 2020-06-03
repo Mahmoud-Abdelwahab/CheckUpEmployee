@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V6O-re-qlJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZcS-bl-VQw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
@@ -221,7 +221,7 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="loginBtn:" destination="V6O-re-qlJ" eventType="touchUpInside" id="4dT-iP-r1D"/>
+                                                        <action selector="loginBtn:" destination="V6O-re-qlJ" eventType="touchUpInside" id="Fkb-YW-FcH"/>
                                                     </connections>
                                                 </button>
                                                 <activityIndicatorView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="hWy-Ks-chh">
@@ -265,9 +265,6 @@
                                                                     <state key="normal" title="Sign up!">
                                                                         <color key="titleColor" red="0.021980820450513177" green="0.73312932565090749" blue="0.98534948243256693" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     </state>
-                                                                    <connections>
-                                                                        <action selector="goToSignupSB:" destination="V6O-re-qlJ" eventType="touchUpInside" id="phd-eL-fis"/>
-                                                                    </connections>
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
@@ -301,9 +298,6 @@
                                                     <state key="normal" title="Forget password?">
                                                         <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
-                                                    <connections>
-                                                        <action selector="resetPassword:" destination="V6O-re-qlJ" eventType="touchUpInside" id="7bu-fI-y8h"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -316,10 +310,6 @@
                                 </cells>
                             </tableViewSection>
                         </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="V6O-re-qlJ" id="s4s-WA-Gfm"/>
-                            <outlet property="delegate" destination="V6O-re-qlJ" id="v77-kC-2mm"/>
-                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Login" id="g5C-I9-ozj">
                         <barButtonItem key="rightBarButtonItem" title="Requests" id="wrK-4d-Kqc">
@@ -327,16 +317,17 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="activityIndicator" destination="hWy-Ks-chh" id="g8P-HL-bQl"/>
-                        <outlet property="emailTextView" destination="r1n-W2-QV3" id="oSG-zz-Pti"/>
-                        <outlet property="loginBtnOutlet" destination="Weh-RQ-OYI" id="CHX-XK-tc1"/>
-                        <outlet property="logoImage" destination="cDZ-H7-5zN" id="kpI-iK-UfG"/>
-                        <outlet property="passWordTextView" destination="Sdi-Z7-y4r" id="3yH-vY-5FO"/>
+                        <outlet property="activityIndicator" destination="hWy-Ks-chh" id="dWd-xp-lqv"/>
+                        <outlet property="emailTextView" destination="r1n-W2-QV3" id="gcd-gJ-ITk"/>
+                        <outlet property="loginBtnOutlet" destination="Weh-RQ-OYI" id="X0m-zQ-AQW"/>
+                        <outlet property="logoImage" destination="cDZ-H7-5zN" id="gF4-nc-3dZ"/>
+                        <outlet property="passWordTextView" destination="Sdi-Z7-y4r" id="IWh-Gu-oVz"/>
+                        <segue destination="q0C-Oc-WEW" kind="presentation" id="R6d-u2-s8Q"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eob-tU-b2a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2557" y="62"/>
+            <point key="canvasLocation" x="3281.1594202898555" y="61.607142857142854"/>
         </scene>
         <!--EmpRequestSVC-->
         <scene sceneID="7BB-OY-ZTo">
@@ -344,100 +335,25 @@
                 <viewControllerPlaceholder storyboardIdentifier="EmpRequestSVC" storyboardName="EmployeeRequestsSB" referencedIdentifier="EmpRequestSVC" id="q0C-Oc-WEW" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Mg-Pt-Wcf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3033" y="62"/>
+            <point key="canvasLocation" x="3942.0289855072465" y="61.607142857142854"/>
         </scene>
-        <!--Reset Password Table View Controller-->
-        <scene sceneID="Lu2-H4-w6S">
+        <!--Navigation Controller-->
+        <scene sceneID="fnT-Sp-U0P">
             <objects>
-                <tableViewController storyboardIdentifier="resetPopUpTV" id="SnO-rl-MQ3" customClass="ResetPasswordTableViewController" customModule="CheckUpEmployee" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="PVg-yW-NGE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                        <sections>
-                            <tableViewSection id="cx8-zc-oYp">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="178" id="ftM-Ii-LWB">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="178"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ftM-Ii-LWB" id="Da4-H4-1hB">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="178"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="116" id="zCX-GW-Kjr">
-                                        <rect key="frame" x="0.0" y="206" width="414" height="116"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zCX-GW-Kjr" id="Ps4-ug-e8C">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="201" id="ngm-of-0ix">
-                                        <rect key="frame" x="0.0" y="322" width="414" height="201"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ngm-of-0ix" id="Sob-us-UVf">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="201"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" borderStyle="bezel" placeholder="Enter your Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qfp-Lj-Wzs" customClass="SkyFloatingLabelTextFieldWithIcon" customModule="SkyFloatingLabelTextField">
-                                                    <rect key="frame" x="36" y="32" width="342" height="32"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRP-iZ-5gI">
-                                                    <rect key="frame" x="90" y="127" width="48" height="30"/>
-                                                    <state key="normal" title="Cancel"/>
-                                                    <connections>
-                                                        <action selector="cancelReseting:" destination="SnO-rl-MQ3" eventType="touchUpInside" id="JRV-Nx-YPh"/>
-                                                    </connections>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Valid Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLO-0F-T6K">
-                                                    <rect key="frame" x="36" y="85" width="342" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="1" green="0.024170271520000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZt-7b-o97">
-                                                    <rect key="frame" x="285" y="127" width="39" height="30"/>
-                                                    <state key="normal" title="Reset"/>
-                                                    <connections>
-                                                        <action selector="resetPassword:" destination="SnO-rl-MQ3" eventType="touchUpInside" id="H6t-QD-NoQ"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="cZt-7b-o97" firstAttribute="top" secondItem="GLO-0F-T6K" secondAttribute="bottom" constant="21" id="4sP-H6-H6h"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="GLO-0F-T6K" secondAttribute="trailing" constant="16" id="5k6-KE-dOv"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="cZt-7b-o97" secondAttribute="trailing" constant="70" id="7LU-Wx-lsO"/>
-                                                <constraint firstItem="GLO-0F-T6K" firstAttribute="leading" secondItem="Sob-us-UVf" secondAttribute="leadingMargin" constant="16" id="CKU-dd-rKR"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="qfp-Lj-Wzs" secondAttribute="trailing" constant="16" id="DXT-bk-Khl"/>
-                                                <constraint firstItem="qfp-Lj-Wzs" firstAttribute="leading" secondItem="Sob-us-UVf" secondAttribute="leadingMargin" constant="16" id="Iuy-Cp-Olr"/>
-                                                <constraint firstItem="oRP-iZ-5gI" firstAttribute="leading" secondItem="Sob-us-UVf" secondAttribute="leadingMargin" constant="70" id="XqS-2g-h7H"/>
-                                                <constraint firstItem="oRP-iZ-5gI" firstAttribute="top" secondItem="GLO-0F-T6K" secondAttribute="bottom" constant="21" id="qRV-5u-oDe"/>
-                                                <constraint firstItem="qfp-Lj-Wzs" firstAttribute="top" secondItem="Sob-us-UVf" secondAttribute="topMargin" constant="21" id="sNR-iW-ieo"/>
-                                                <constraint firstItem="GLO-0F-T6K" firstAttribute="top" secondItem="qfp-Lj-Wzs" secondAttribute="bottom" constant="21" id="vnM-J9-2WM"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="SnO-rl-MQ3" id="okH-T7-mYX"/>
-                            <outlet property="delegate" destination="SnO-rl-MQ3" id="dL1-UI-F6P"/>
-                        </connections>
-                    </tableView>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZcS-bl-VQw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tcR-xe-dXc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
                     <connections>
-                        <outlet property="emailTxtFeold" destination="qfp-Lj-Wzs" id="LnM-lB-rGX"/>
-                        <outlet property="errorLbl" destination="GLO-0F-T6K" id="GVn-2K-pGm"/>
+                        <segue destination="V6O-re-qlJ" kind="relationship" relationship="rootViewController" id="TOP-4w-ydm"/>
                     </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5B3-fc-fKb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aNQ-ZJ-tMa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3973.913043478261" y="72.991071428571431"/>
+            <point key="canvasLocation" x="2371.0144927536235" y="61.607142857142854"/>
         </scene>
     </scenes>
     <resources>

@@ -44,16 +44,43 @@ class EmployeeRequestsVC: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "userCustomCell", for: indexPath) as! UserCustomTableViewCell
         
         cell.userName.text = users[indexPath.row].name
-        if let imgPath = users[indexPath.row].imagePath {
-                  cell.userImg.sd_setImage(with: URL(string: users[indexPath.row].imagePath!), placeholderImage:UIImage(named: "placeholder.png"))
-             }
+//        if let imgPath = users[indexPath.row].imagePath {
+//                  cell.userImg.sd_setImage(with: URL(string: users[indexPath.row].imagePath!), placeholderImage:UIImage(named: "placeholder.png"))
+//             }
             
              if let location = users[indexPath.row].address {
                   //  cell.userAddress.text = users[indexPath.row].address
                 
                         }
         
+        //*************///
         
+       // will be executed when user tap on the button
+        // notice the capture block has [unowned self]
+        // the 'self' is the viewcontroller
+        cell.getDirectionClosure = { [unowned self] in
+         
+            let alert = UIAlertController(title: "Subscribed!", message: "Subscribed to Mahmoud Cell number : \(indexPath.row)", preferredStyle: .alert)
+          let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+          alert.addAction(okAction)
+                
+          self.present(alert, animated: true, completion: nil)
+        }
+        
+        
+        cell.calMeClouser = { [unowned self] in
+         
+            
+            if let url = URL(string: "tel://\(0881149060094)") {
+                UIApplication.shared.openURL(url)
+            }
+            
+//            let alert = UIAlertController(title: "Subscribed!", message: "Call Mahmoud Cell number : \(indexPath.row)", preferredStyle: .alert)
+//          let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+//          alert.addAction(okAction)
+//                
+//          self.present(alert, animated: true, completion: nil)
+        }
        
         
         // Configure the cell...
@@ -62,11 +89,11 @@ class EmployeeRequestsVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        guard let userDataSB = storyboard?.instantiateViewController(withIdentifier: "userDataSB") as? UserDataTableViewController else { return }
+//
+//        guard let userDataSB = storyboard?.instantiateViewController(withIdentifier: "userDataSB") as? UserDataTableViewController else { return }
         
       //  userDataSB.patientData = users[indexPath.row]
-        navigationController?.pushViewController(userDataSB, animated: true)
+//        navigationController?.pushViewController(userDataSB, animated: true)
     }
     
 

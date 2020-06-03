@@ -19,7 +19,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iey-el-54n">
                                 <rect key="frame" x="0.0" y="44" width="414" height="228"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HD1-Lx-cck">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="micrscopBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="HD1-Lx-cck">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="228"/>
                                     </imageView>
                                 </subviews>
@@ -87,10 +87,8 @@
                         <barButtonItem key="rightBarButtonItem" title="Filter" id="1ki-3D-tCk"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="errorLabelOutlet" destination="PY1-Uw-xYS" id="tzU-au-jmu"/>
                         <outlet property="headerViewHeight" destination="P0f-Wh-P1X" id="UYP-lj-TJC"/>
                         <outlet property="labBrachCollection" destination="kv7-pa-R4I" id="d8s-qu-uAt"/>
-                        <outlet property="labImageViewOutlet" destination="HD1-Lx-cck" id="t7L-2K-lqq"/>
                         <outlet property="labsActicity" destination="fJZ-8P-3E3" id="BfC-kh-gMT"/>
                         <outlet property="topViewConstraint" destination="QOn-7Q-XxE" id="I1D-o9-kgW"/>
                     </connections>
@@ -107,7 +105,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="borg" translatesAutoresizingMaskIntoConstraints="NO" id="Nb7-sv-vt4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="users" translatesAutoresizingMaskIntoConstraints="NO" id="Nb7-sv-vt4">
                                 <rect key="frame" x="0.0" y="44" width="414" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="IzE-Yf-vz0"/>
@@ -179,9 +177,6 @@
                                     <constraint firstAttribute="bottom" secondItem="NrD-Qy-fFR" secondAttribute="bottom" constant="400" id="vuZ-Us-nlk"/>
                                     <constraint firstItem="9Mz-z0-B1R" firstAttribute="leading" secondItem="tYe-HI-2sc" secondAttribute="leading" constant="27" id="xTW-tp-2KA"/>
                                 </constraints>
-                                <connections>
-                                    <outlet property="delegate" destination="3A1-UZ-3bB" id="4to-L2-u1r"/>
-                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -201,12 +196,11 @@
                     <size key="freeformSize" width="414" height="896"/>
                     <connections>
                         <outlet property="headingHeight" destination="IzE-Yf-vz0" id="htt-J0-eSu"/>
-                        <outlet property="myScrollView" destination="tYe-HI-2sc" id="OtB-XV-4p9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="05P-iX-JyO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3075" y="772"/>
+            <point key="canvasLocation" x="3073.913043478261" y="771.42857142857144"/>
         </scene>
         <!--Branch Description View Controller-->
         <scene sceneID="UbX-Yp-eV1">
@@ -297,9 +291,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="labAddressOutlet" destination="waR-Jr-SMo" id="2Bb-CK-Yyn"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="fourthCell" rowHeight="40" id="veI-bA-7An" customClass="FourthStaticTableViewCell" customModule="CheckUpEmployee" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="165" width="414" height="40"/>
@@ -324,9 +315,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="labPhoneOutlet" destination="SVF-5T-V4V" id="ZCR-bx-rin"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="fifthCell" rowHeight="46" id="Pdp-eP-NWM" customClass="FifthStaticTableViewCell" customModule="CheckUpEmployee" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="205" width="414" height="46"/>
@@ -351,9 +339,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="labHolidayOutlet" destination="c7Y-4Z-49O" id="k2z-i8-sec"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="sixthCell" rowHeight="52" id="N3h-DR-QTS" customClass="SisxthStaticTableViewCell" customModule="CheckUpEmployee" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="251" width="414" height="52"/>
@@ -378,9 +363,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="labWorkOutlet" destination="VOg-h8-v21" id="JDc-R3-n2H"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="seventhCell" rowHeight="60" id="Mzw-Wq-jPY" customClass="SeventhStaticTableViewCell" customModule="CheckUpEmployee" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="303" width="414" height="60"/>
@@ -405,9 +387,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="labAvailableOutelt" destination="tDN-YT-Vqd" id="YoD-fm-VwY"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="reviewsCell" rowHeight="104" id="Osg-Mc-5ou" customClass="ReviewsTableViewCell" customModule="CheckUpEmployee" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="363" width="414" height="104"/>
@@ -466,9 +445,6 @@
                                                 <constraint firstItem="9G5-HN-Cvo" firstAttribute="top" secondItem="i2D-i5-zTZ" secondAttribute="top" id="YhY-U2-wGm"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="LabMapOutlet" destination="9G5-HN-Cvo" id="yfS-wd-X9I"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ningthCell" rowHeight="89" id="bhj-uZ-J6V" customClass="NinthStaticTableViewCell" customModule="CheckUpEmployee" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="567" width="414" height="89"/>
@@ -572,9 +548,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="branchDescriptionTableView" destination="Oq6-Y0-NHf" id="AcF-E4-0db"/>
-                        <outlet property="btnViewOutlet" destination="QYJ-8Q-CLC" id="RWh-kL-Sl8"/>
                         <outlet property="headerViewHeight" destination="QNd-x2-NIy" id="lbX-4N-Zob"/>
-                        <outlet property="labImageView" destination="oIk-be-L4x" id="x3Z-QW-mn6"/>
                         <outlet property="myLabel" destination="Ehj-DN-nzJ" id="a9W-yp-Q5N"/>
                         <outlet property="viewOutlet" destination="fbk-n6-YCi" id="kuI-YE-DVG"/>
                     </connections>
@@ -585,7 +559,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="borg" width="960" height="960"/>
         <image name="chevron.left" catalog="system" width="48" height="64"/>
+        <image name="micrscopBackGround" width="800" height="600"/>
+        <image name="users" width="512" height="512"/>
     </resources>
 </document>

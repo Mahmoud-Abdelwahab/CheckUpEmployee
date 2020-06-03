@@ -45,7 +45,7 @@ class LoginVC: UITableViewController,UITextFieldDelegate, IView  {
         
         view.addGestureRecognizer(tap)
         activityIndicator.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
-        //activityIndicator.hide()
+        activityIndicator.isHidden = true
     }
     //  function to enable dimiss key board(Return key)
     func textFieldShouldReturn(_ scoreText: UITextField) -> Bool {
@@ -81,23 +81,23 @@ class LoginVC: UITableViewController,UITextFieldDelegate, IView  {
     
     
     
-    @IBAction func resetPassword(_ sender: Any) {
-        
-        let resetPassPopup = (
-            storyboard?.instantiateViewController(
-                withIdentifier: "resetPopUpTV"))!
-        present(resetPassPopup, animated: true, completion: nil)
-    }
-    
-    @IBAction func goToSignupSB(_ sender: Any) {
-        
-        let signup = (
-            storyboard?.instantiateViewController(
-                withIdentifier: "signupSVC"))!
-        
-        present(signup, animated: true, completion: nil)
-        
-    }
+//    @IBAction func resetPassword(_ sender: Any) {
+//
+//        let resetPassPopup = (
+//            storyboard?.instantiateViewController(
+//                withIdentifier: "resetPopUpTV"))!
+//        present(resetPassPopup, animated: true, completion: nil)
+//    }
+//
+//    @IBAction func goToSignupSB(_ sender: Any) {
+//        
+//        let signup = (
+//            storyboard?.instantiateViewController(
+//                withIdentifier: "signupSVC"))!
+//        
+//        present(signup, animated: true, completion: nil)
+//        
+//    }
     
     
     
@@ -109,7 +109,7 @@ class LoginVC: UITableViewController,UITextFieldDelegate, IView  {
 extension LoginVC : ILoginVC {
    //var activityIndicator: UIActivityIndicatorView!
     func userValidation() {
-        dismiss(animated: true, completion: nil)
+       // dismiss(animated: true, completion: nil)
         print("Loged Successfuly ... ")
         
         
@@ -120,16 +120,17 @@ extension LoginVC : ILoginVC {
     
     func showIndicator() {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
-   //     activityIndicator.show()
+        activityIndicator.isHidden = false
         loginBtnOutlet.alpha = 0
-//        activityIndicator.startAnimating()
+        activityIndicator.startAnimating()
     }
     
     func hideIndicator() {
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
+          activityIndicator.isHidden = true
         //activityIndicator.hide()
         loginBtnOutlet.alpha = 1
-//        activityIndicator.stopAnimating()
+       activityIndicator.stopAnimating()
     }
     
     func errorMessage(msg: String) {
