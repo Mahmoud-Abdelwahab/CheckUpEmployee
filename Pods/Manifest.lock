@@ -96,6 +96,8 @@ PODS:
   - SDWebImage (4.4.8):
     - SDWebImage/Core (= 4.4.8)
   - SDWebImage/Core (4.4.8)
+  - SkyFloatingLabelTextField (3.8.0)
+  - TransitionButton (0.5.3)
 
 DEPENDENCIES:
   - Firebase
@@ -104,6 +106,8 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
   - SDWebImage (~> 4.0)
+  - SkyFloatingLabelTextField (~> 3.0)
+  - TransitionButton
 
 SPEC REPOS:
   trunk:
@@ -126,6 +130,8 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - SDWebImage
+    - SkyFloatingLabelTextField
+    - TransitionButton
 
 SPEC CHECKSUMS:
   Firebase: 5719b4f965f76643241a1bb8244483ff6117db39
@@ -147,7 +153,9 @@ SPEC CHECKSUMS:
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+  TransitionButton: 36283346e17c64775a1b3bc3a7a72940a367de1f
 
-PODFILE CHECKSUM: 985adb07bec73bb482007f04e84dcd1515fae6e1
+PODFILE CHECKSUM: fbb8ffaab3a3e610189c7afd58b131b1b7202758
 
 COCOAPODS: 1.8.4
