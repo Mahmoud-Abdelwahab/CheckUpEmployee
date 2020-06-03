@@ -10,19 +10,19 @@ import UIKit
 
 class UsersTableViewController: UITableViewController {
     
-    var users : [UserNeedToTakeSample] = [UserNeedToTakeSample]()
+    var users : [User] = [User]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let user : UserNeedToTakeSample = UserNeedToTakeSample(name: "Ali", imageURL: "https://mobresults.almokhtabar.com:88/UploadedImages/aacd8efc-6096-4230-ab87-5140e90c5e45.jpg", age: 12, address: "Cairo", phones: ["5166515", "5115545"], date: "jun 01 4895", time: "12:45 PM")
+//        let user : User = User(name: "Ali", imageURL: "https://mobresults.almokhtabar.com:88/UploadedImages/aacd8efc-6096-4230-ab87-5140e90c5e45.jpg", age: 12, address: "Cairo", phones: ["5166515", "5115545"], date: "jun 01 4895", time: "12:45 PM")
         
         tableView.register(UINib(nibName: "UserCustomTableViewCell", bundle: nil), forCellReuseIdentifier: "userCustomCell")
-        
-        users.append(user)
-        users.append(user)
-        users.append(user)
-        users.append(user)
+//
+//        users.append(user)
+//        users.append(user)
+//        users.append(user)
+//        users.append(user)
 
     }
 
@@ -42,9 +42,9 @@ class UsersTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "userCustomCell", for: indexPath) as! UserCustomTableViewCell
         
-        cell.userImg.sd_setImage(with: URL(string: users[indexPath.row].imageURL), placeholderImage:UIImage(named: "placeholder.png"))
-        cell.userName.text = users[indexPath.row].name
-        cell.userAddress.text = users[indexPath.row].address
+//        cell.userImg.sd_setImage(with: URL(string: users[indexPath.row].imageURL), placeholderImage:UIImage(named: "placeholder.png"))
+//        cell.userName.text = users[indexPath.row].name
+//        cell.userAddress.text = users[indexPath.row].address
         
         // Configure the cell...
 
@@ -55,7 +55,7 @@ class UsersTableViewController: UITableViewController {
         
         guard let userDataSB = storyboard?.instantiateViewController(withIdentifier: "userDataSB") as? UserDataTableViewController else { return }
         
-        userDataSB.patientData = users[indexPath.row]
+   //     userDataSB.patientData = users[indexPath.row]
         navigationController?.pushViewController(userDataSB, animated: true)
     }
     

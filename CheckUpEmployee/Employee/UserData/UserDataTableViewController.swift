@@ -10,7 +10,7 @@ import UIKit
 
 class UserDataTableViewController: UITableViewController {
     
-    var patientData : UserNeedToTakeSample?
+//    var patientData : User?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,21 +28,21 @@ class UserDataTableViewController: UITableViewController {
         
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "imgCell", for: indexPath) as! ImgTableViewCell
-                        
-            cell.patientImg.sd_setImage(with: URL(string: patientData?.imageURL ?? "placeholder.png"), placeholderImage:UIImage(named: "placeholder.png"))
+//                        
+//            cell.patientImg.sd_setImage(with: URL(string: patientData?.imageURL ?? "placeholder.png"), placeholderImage:UIImage(named: "placeholder.png"))
                 return cell
         } else if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "dataCell", for: indexPath) as! DataTableViewCell
             
-            cell.nameLbl.text = patientData?.name
-            cell.ageLbl.text = String("\(patientData!.age)")
-            cell.addressLbl.text = patientData?.address
-            cell.dateLbl.text = patientData?.date
-            cell.timeLbl.text = patientData?.time
-            cell.phoneLbl.text = ""
-            for item in patientData?.phones ?? [""] {
-                cell.phoneLbl.text?.append(item+"\n")
-            }
+//            cell.nameLbl.text = patientData?.name
+//            cell.ageLbl.text = String("\(patientData!.age)")
+//            cell.addressLbl.text = patientData?.address
+//            cell.dateLbl.text = patientData?.date
+//            cell.timeLbl.text = patientData?.time
+//            cell.phoneLbl.text = ""
+//            for item in patientData?.phones ?? [""] {
+//                cell.phoneLbl.text?.append(item+"\n")
+//            }
             
              return cell
             

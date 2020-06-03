@@ -16,6 +16,10 @@ class UserCustomTableViewCell: UITableViewCell {
     
     @IBOutlet weak var userAddress: UILabel!
     
+    @IBAction func getDirectionBtn(_ sender: Any) {
+    }
+    @IBAction func callUserBtn(_ sender: Any) {
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

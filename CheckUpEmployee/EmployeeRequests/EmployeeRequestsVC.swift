@@ -7,16 +7,17 @@
 //
 
 import UIKit
-
+import SDWebImage
 class EmployeeRequestsVC: UITableViewController {
     var users : [User] = [User]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let user : User = User(id: <#T##String?#>, name: <#T##String?#>, email: <#T##String?#>, birthdate: <#T##String?#>, gender: <#T##String?#>, phone: <#T##<<error type>>#>, insurance: <#T##String?#>, address: <#T##<<error type>>#>, imagePath: <#T##String?#>)
-            User(name: "Ali", imageURL: "https://mobresults.almokhtabar.com:88/UploadedImages/aacd8efc-6096-4230-ab87-5140e90c5e45.jpg", age: 12, address: "Cairo", phones: ["5166515", "5115545"], date: "jun 01 4895", time: "12:45 PM")
-        
+        let user : User = User(id: "sfsdfs", name: "Mahmoud", email: "mahmoudabdelwahab199390@gmail.com", birthdate: "25-11-1993", gender: "male", phone: [Phone(number: "01149060094", isLand: false)], insurance: "Yes", address: Address(address1: "Qenaa", buildingNo: "1", floorNo: "1", apartmentNo: "2", longitude: 90.0, latitude: 120.45), imagePath:"https://firebasestorage.googleapis.com/v0/b/checkup-23ffe.appspot.com/o/users.png?alt=media&token=8fba9f3d-0739-4b7f-afab-8ae7b6e1c442")
+            
+            
+            
         tableView.register(UINib(nibName: "UserCustomTableViewCell", bundle: nil), forCellReuseIdentifier: "userCustomCell")
         
         users.append(user)
@@ -42,9 +43,18 @@ class EmployeeRequestsVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "userCustomCell", for: indexPath) as! UserCustomTableViewCell
         
-        cell.userImg.sd_setImage(with: URL(string: users[indexPath.row].imageURL), placeholderImage:UIImage(named: "placeholder.png"))
         cell.userName.text = users[indexPath.row].name
-        cell.userAddress.text = users[indexPath.row].address
+        if let imgPath = users[indexPath.row].imagePath {
+                  cell.userImg.sd_setImage(with: URL(string: users[indexPath.row].imagePath!), placeholderImage:UIImage(named: "placeholder.png"))
+             }
+            
+             if let location = users[indexPath.row].address {
+                  //  cell.userAddress.text = users[indexPath.row].address
+                
+                        }
+        
+        
+       
         
         // Configure the cell...
 
@@ -55,7 +65,7 @@ class EmployeeRequestsVC: UITableViewController {
         
         guard let userDataSB = storyboard?.instantiateViewController(withIdentifier: "userDataSB") as? UserDataTableViewController else { return }
         
-        userDataSB.patientData = users[indexPath.row]
+      //  userDataSB.patientData = users[indexPath.row]
         navigationController?.pushViewController(userDataSB, animated: true)
     }
     
@@ -104,3 +114,4 @@ class EmployeeRequestsVC: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+}
