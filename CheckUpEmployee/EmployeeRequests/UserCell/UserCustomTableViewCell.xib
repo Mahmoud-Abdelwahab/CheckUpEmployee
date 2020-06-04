@@ -9,59 +9,61 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCustomCell" rowHeight="71" id="KGk-i7-Jjw" customClass="UserCustomTableViewCell" customModule="CheckUpEmployee" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="365" height="71"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCustomCell" rowHeight="117" id="KGk-i7-Jjw" customClass="UserCustomTableViewCell" customModule="CheckUpEmployee" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="570" height="117"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="UserCustomTableViewCell" customModule="CheckUpEmployee" customModuleProvider="target">
-                <rect key="frame" x="0.0" y="0.0" width="365" height="71"/>
+                <rect key="frame" x="0.0" y="0.0" width="570" height="117"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="users" translatesAutoresizingMaskIntoConstraints="NO" id="dXP-15-tUH">
-                        <rect key="frame" x="10" y="3" width="65" height="65"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="65" id="YLe-Ks-tPC"/>
-                            <constraint firstAttribute="width" constant="65" id="zZD-OE-Pyy"/>
-                        </constraints>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="userCustomCell" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgR-lL-KIr">
-                        <rect key="frame" x="83" y="12" width="266" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VOm-av-RCr">
-                        <rect key="frame" x="83" y="38" width="282" height="30"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="I8i-V6-0qC">
+                        <rect key="frame" x="10" y="12" width="550" height="75"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xh8-n6-bOJ">
-                                <rect key="frame" x="0.0" y="0.0" width="137" height="30"/>
-                                <state key="normal" title="GetDirection"/>
-                                <connections>
-                                    <action selector="getDirectionBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7vz-ev-FIx"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMp-QK-wHY">
-                                <rect key="frame" x="145" y="4" width="137" height="22"/>
-                                <state key="normal" title="Button" image="phone.down.fill" catalog="system"/>
-                                <connections>
-                                    <action selector="callMeBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fhg-9i-JYB"/>
-                                </connections>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="users" translatesAutoresizingMaskIntoConstraints="NO" id="dXP-15-tUH">
+                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="S1w-Pe-34S"/>
+                                    <constraint firstAttribute="height" constant="75" id="xJT-yH-kTs"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xlO-tQ-Jhv">
+                                <rect key="frame" x="85" y="0.0" width="465" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="userCustomCell" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgR-lL-KIr">
+                                        <rect key="frame" x="0.0" y="0.0" width="465" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VOm-av-RCr">
+                                        <rect key="frame" x="0.0" y="41.5" width="465" height="33.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xh8-n6-bOJ">
+                                                <rect key="frame" x="0.0" y="2" width="222.5" height="30"/>
+                                                <state key="normal" title="GetDirection"/>
+                                                <connections>
+                                                    <action selector="getDirectionBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7vz-ev-FIx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMp-QK-wHY">
+                                                <rect key="frame" x="242.5" y="6" width="222.5" height="22"/>
+                                                <state key="normal" image="phone.down.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="callMeBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fhg-9i-JYB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="VOm-av-RCr" firstAttribute="leading" secondItem="dXP-15-tUH" secondAttribute="trailing" constant="8" id="5WH-Sk-S1k"/>
-                    <constraint firstAttribute="trailing" secondItem="lgR-lL-KIr" secondAttribute="trailing" constant="16" id="IZO-QZ-e16"/>
-                    <constraint firstItem="dXP-15-tUH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="Ix8-AG-XfN"/>
-                    <constraint firstAttribute="bottom" secondItem="VOm-av-RCr" secondAttribute="bottom" constant="3" id="LbU-7m-BHh"/>
-                    <constraint firstAttribute="bottom" secondItem="dXP-15-tUH" secondAttribute="bottom" constant="3" id="QvZ-3v-irU"/>
-                    <constraint firstItem="lgR-lL-KIr" firstAttribute="leading" secondItem="dXP-15-tUH" secondAttribute="trailing" constant="8" id="S2x-wd-RyP"/>
-                    <constraint firstItem="VOm-av-RCr" firstAttribute="top" secondItem="lgR-lL-KIr" secondAttribute="bottom" constant="5.5" id="Tr5-DI-wYV"/>
-                    <constraint firstItem="VOm-av-RCr" firstAttribute="leading" secondItem="dXP-15-tUH" secondAttribute="trailing" constant="8" id="URt-da-MJt"/>
-                    <constraint firstAttribute="trailing" secondItem="VOm-av-RCr" secondAttribute="trailing" id="eiM-Ga-nPQ"/>
-                    <constraint firstItem="dXP-15-tUH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="krM-UM-HBN"/>
-                    <constraint firstItem="lgR-lL-KIr" firstAttribute="leading" secondItem="dXP-15-tUH" secondAttribute="trailing" constant="8" id="n0q-hF-di8"/>
-                    <constraint firstItem="lgR-lL-KIr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="zHH-JL-SNH"/>
+                    <constraint firstAttribute="trailing" secondItem="I8i-V6-0qC" secondAttribute="trailing" constant="10" id="1kD-c5-N8A"/>
+                    <constraint firstItem="I8i-V6-0qC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="UKt-Gh-r01"/>
+                    <constraint firstItem="I8i-V6-0qC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="dKV-LW-b0S"/>
+                    <constraint firstAttribute="bottom" secondItem="I8i-V6-0qC" secondAttribute="bottom" constant="30" id="lYp-bf-zRF"/>
                 </constraints>
                 <connections>
                     <outlet property="userImg" destination="dXP-15-tUH" id="diH-ad-NiV"/>
@@ -73,7 +75,7 @@
                 <outlet property="getDirectionBtnOutlet" destination="xh8-n6-bOJ" id="LDp-uj-6AM"/>
                 <outlet property="userName" destination="lgR-lL-KIr" id="ehK-el-5wl"/>
             </connections>
-            <point key="canvasLocation" x="22" y="146"/>
+            <point key="canvasLocation" x="73.913043478260875" y="90.736607142857139"/>
         </tableViewCell>
     </objects>
     <resources>

@@ -28,7 +28,7 @@ class UserCustomTableViewCell: UITableViewCell {
     }
     
     @IBOutlet weak var getDirectionBtnOutlet: UIButton!
-    var getDirectionClosure : (()->())?
+    var  getDirectionClosure : (()->())?
     var calMeClouser : (()->())?
     /*
      No need to keep track the index since we are using closure to store the function that will be executed when user tap on it.
