@@ -94,9 +94,8 @@ class EmployeeRequestsVC: UITableViewController {
         cell.calMeClouser = { [unowned self] in
          
             print("Calling .........")
-            if let url = URL(string: "tel://\(0881149060094)") {
-                UIApplication.shared.openURL(url)
-            }
+           guard let number = URL(string: "tel://" + "4151231234") else { return }
+            UIApplication.shared.open(number)
             
 //            let alert = UIAlertController(title: "Subscribed!", message: "Call Mahmoud Cell number : \(indexPath.row)", preferredStyle: .alert)
 //          let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
