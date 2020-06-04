@@ -35,10 +35,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xh8-n6-bOJ">
                                 <rect key="frame" x="0.0" y="0.0" width="137" height="30"/>
                                 <state key="normal" title="GetDirection"/>
+                                <connections>
+                                    <action selector="getDirectionBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7vz-ev-FIx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMp-QK-wHY">
                                 <rect key="frame" x="145" y="4" width="137" height="22"/>
                                 <state key="normal" title="Button" image="phone.down.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="callMeBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fhg-9i-JYB"/>
+                                </connections>
                             </button>
                         </subviews>
                     </stackView>
@@ -67,7 +73,7 @@
                 <outlet property="getDirectionBtnOutlet" destination="xh8-n6-bOJ" id="LDp-uj-6AM"/>
                 <outlet property="userName" destination="lgR-lL-KIr" id="ehK-el-5wl"/>
             </connections>
-            <point key="canvasLocation" x="-63" y="150"/>
+            <point key="canvasLocation" x="22" y="146"/>
         </tableViewCell>
     </objects>
     <resources>
