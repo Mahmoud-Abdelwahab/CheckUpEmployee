@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E1C3F9B2489674E0016A555 /* DictionaryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C3F9A2489674E0016A555 /* DictionaryEncoder.swift */; };
+		4E1CB73224893CD5009EEEC8 /* UpdateStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1CB73124893CD5009EEEC8 /* UpdateStatus.swift */; };
+		4E2D6CB4248A75D500FADA05 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2D6CB3248A75D500FADA05 /* ContactTableViewCell.swift */; };
+		4E2D6CB7248A770300FADA05 /* UserDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2D6CB6248A770300FADA05 /* UserDetailsTableViewController.swift */; };
+		4E2D6CB9248A77A000FADA05 /* ContactTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2D6CB8248A77A000FADA05 /* ContactTableView.swift */; };
 		96D3ABAC4FA71904C9AD4A54 /* Pods_CheckUpEmployee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AAD1A20ADC73AEE4F13391 /* Pods_CheckUpEmployee.framework */; };
 		BB0631EF2487623400729573 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0631EE2487623400729573 /* Phone.swift */; };
 		BB0631F52487708100729573 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0631F42487708100729573 /* Address.swift */; };
@@ -50,6 +55,11 @@
 
 /* Begin PBXFileReference section */
 		0E6A74C05A476F4CFAC2A193 /* Pods-CheckUpEmployee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckUpEmployee.debug.xcconfig"; path = "Target Support Files/Pods-CheckUpEmployee/Pods-CheckUpEmployee.debug.xcconfig"; sourceTree = "<group>"; };
+		4E1C3F9A2489674E0016A555 /* DictionaryEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryEncoder.swift; sourceTree = "<group>"; };
+		4E1CB73124893CD5009EEEC8 /* UpdateStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateStatus.swift; sourceTree = "<group>"; };
+		4E2D6CB3248A75D500FADA05 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		4E2D6CB6248A770300FADA05 /* UserDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsTableViewController.swift; sourceTree = "<group>"; };
+		4E2D6CB8248A77A000FADA05 /* ContactTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableView.swift; sourceTree = "<group>"; };
 		5216FC7B931CF2FA8D79343F /* Pods-CheckUpEmployee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckUpEmployee.release.xcconfig"; path = "Target Support Files/Pods-CheckUpEmployee/Pods-CheckUpEmployee.release.xcconfig"; sourceTree = "<group>"; };
 		BB0631EE2487623400729573 /* Phone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
 		BB0631F42487708100729573 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
@@ -108,6 +118,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E2D6CB2248A75AC00FADA05 /* ContactCell */ = {
+			isa = PBXGroup;
+			children = (
+				4E2D6CB3248A75D500FADA05 /* ContactTableViewCell.swift */,
+			);
+			path = ContactCell;
+			sourceTree = "<group>";
+		};
+		4E2D6CB5248A76D300FADA05 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4E2D6CB6248A770300FADA05 /* UserDetailsTableViewController.swift */,
+				4E2D6CB8248A77A000FADA05 /* ContactTableView.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		5E843F87FA4CCB9490384C9B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +251,7 @@
 				BB16C2B62485B016009503A1 /* User.swift */,
 				BB0631EE2487623400729573 /* Phone.swift */,
 				BB0631F42487708100729573 /* Address.swift */,
+				4E1CB73124893CD5009EEEC8 /* UpdateStatus.swift */,
 			);
 			path = Pojos;
 			sourceTree = "<group>";
@@ -235,6 +263,7 @@
 				BB16C28F24859560009503A1 /* ICheckConnection.swift */,
 				BB16C29024859560009503A1 /* IView.swift */,
 				BB16C29124859560009503A1 /* IViewAdvancedAlert.swift */,
+				4E1C3F9A2489674E0016A555 /* DictionaryEncoder.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -259,6 +288,8 @@
 		BB16C2A02485AE75009503A1 /* UserCustomCells */ = {
 			isa = PBXGroup;
 			children = (
+				4E2D6CB5248A76D300FADA05 /* ViewController */,
+				4E2D6CB2248A75AC00FADA05 /* ContactCell */,
 				BB16C2A12485AE75009503A1 /* DataCustomCell */,
 				BB16C2A42485AE75009503A1 /* ImgCustomCell */,
 				BB16C2A72485AE75009503A1 /* MapViewCustomCell */,
@@ -423,16 +454,20 @@
 				BB16C2B02485AE75009503A1 /* ImgTableViewCell.swift in Sources */,
 				BB16C27824856DCB009503A1 /* LoginModel.swift in Sources */,
 				BB16C27624856DB7009503A1 /* LoginPresenter.swift in Sources */,
+				4E1CB73224893CD5009EEEC8 /* UpdateStatus.swift in Sources */,
 				BB0631F52487708100729573 /* Address.swift in Sources */,
 				BB16C2B22485AE75009503A1 /* MapViewTableViewCell.swift in Sources */,
 				BB16C2982485992E009503A1 /* Alert.swift in Sources */,
 				BB16C25D248561A2009503A1 /* LoginVC.swift in Sources */,
 				BB16C2AC2485AE75009503A1 /* UserCustomTableViewCell.swift in Sources */,
 				BB1C099E24884450000F24A6 /* UserDetailsPresenter.swift in Sources */,
+				4E1C3F9B2489674E0016A555 /* DictionaryEncoder.swift in Sources */,
+				4E2D6CB9248A77A000FADA05 /* ContactTableView.swift in Sources */,
 				BB16C2B72485B016009503A1 /* User.swift in Sources */,
 				BB1C09A02488446C000F24A6 /* UserDetailsModel.swift in Sources */,
 				BB16C29324859560009503A1 /* ICheckConnection.swift in Sources */,
 				BB16C286248574E4009503A1 /* EmployeeStatusPresenter.swift in Sources */,
+				4E2D6CB7248A770300FADA05 /* UserDetailsTableViewController.swift in Sources */,
 				BB16C259248561A2009503A1 /* AppDelegate.swift in Sources */,
 				BB16C29424859560009503A1 /* IView.swift in Sources */,
 				BB1C09A224884485000F24A6 /* IUserDetails.swift in Sources */,
@@ -444,6 +479,7 @@
 				BB16C2AE2485AE75009503A1 /* DataTableViewCell.swift in Sources */,
 				BB16C29224859560009503A1 /* IBase.swift in Sources */,
 				BB16C29524859560009503A1 /* IViewAdvancedAlert.swift in Sources */,
+				4E2D6CB4248A75D500FADA05 /* ContactTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,3 +1,5 @@
+project '/Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee.xcodeproj'
+
 # Uncomment the next line to define a global platform for your project
  platform :ios, '9.0'
 
@@ -12,7 +14,7 @@ target 'CheckUpEmployee' do
   pod 'Firebase/Storage'
   pod 'SkyFloatingLabelTextField', '~> 3.0'
   pod 'TransitionButton'
-
+  pod 'Alamofire'
   # Pods for CheckUpEmployee
 
 end

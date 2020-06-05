@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.9.1)
   - Firebase (6.25.0):
     - Firebase/Core (= 6.25.0)
   - Firebase/Auth (6.25.0):
@@ -100,6 +101,7 @@ PODS:
   - TransitionButton (0.5.3)
 
 DEPENDENCIES:
+  - Alamofire
   - Firebase
   - Firebase/Auth
   - Firebase/Core
@@ -111,6 +113,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -134,6 +137,7 @@ SPEC REPOS:
     - TransitionButton
 
 SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Firebase: 5719b4f965f76643241a1bb8244483ff6117db39
   FirebaseAnalytics: 93565f3f0f0f50a5d8770850bfe6a82eaba5db27
   FirebaseAuth: 7047aec89c0b17ecd924a550c853f0c27ac6015e
@@ -156,6 +160,6 @@ SPEC CHECKSUMS:
   SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
   TransitionButton: 36283346e17c64775a1b3bc3a7a72940a367de1f
 
-PODFILE CHECKSUM: fbb8ffaab3a3e610189c7afd58b131b1b7202758
+PODFILE CHECKSUM: fdab83277f87cbb0e138b1795388a6b2cfbe96dc
 
 COCOAPODS: 1.8.4
