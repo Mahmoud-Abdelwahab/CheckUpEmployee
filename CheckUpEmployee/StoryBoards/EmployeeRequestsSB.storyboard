@@ -17,6 +17,16 @@
                         <color key="separatorColor" red="1" green="0.97176855799999995" blue="0.92910677190000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCustomCell" id="7ac-F9-p2E" customClass="UserCustomTableViewCell" customModule="CheckUpEmployee" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7ac-F9-p2E" id="U9p-7N-nbK">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="avz-MO-jAU" id="J3R-t5-YmN"/>
                             <outlet property="delegate" destination="avz-MO-jAU" id="Anz-oe-qOa"/>
@@ -28,28 +38,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nhe-d9-hYu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2726.0869565217395" y="-62.276785714285708"/>
-        </scene>
-        <!--Result-->
-        <scene sceneID="iyH-d6-aPJ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="STT-EB-cr6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Result" id="7PQ-xn-nf7">
-                        <inset key="imageInsets" minX="0.0" minY="40" maxX="0.0" maxY="40"/>
-                    </tabBarItem>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gja-ug-eRh">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="avz-MO-jAU" kind="relationship" relationship="rootViewController" id="XDj-0Y-g49"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="38r-hq-c3e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1815.9420289855075" y="-62.276785714285708"/>
+            <point key="canvasLocation" x="2381" y="-70"/>
         </scene>
     </scenes>
 </document>

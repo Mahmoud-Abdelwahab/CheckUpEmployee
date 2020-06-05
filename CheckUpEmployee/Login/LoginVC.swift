@@ -22,7 +22,10 @@ class LoginVC: UITableViewController,UITextFieldDelegate, IView  {
     
     @IBOutlet weak var loginBtnOutlet: UIButton!
     
-  
+    override func viewWillAppear(_ animated: Bool) {
+        
+        Auth.auth().currentUser
+    }
       
     //
     //    @IBOutlet weak var googleSignInBtn: GIDSignInButton!
