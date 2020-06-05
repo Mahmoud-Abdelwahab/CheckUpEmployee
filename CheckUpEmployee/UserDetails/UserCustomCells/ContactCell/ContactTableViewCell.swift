@@ -12,8 +12,8 @@ class ContactTableViewCell: UITableViewCell {
 
     @IBOutlet weak var phoneTypeImage: UIImageView!
     @IBOutlet weak var phoneNumberTxt: UILabel!
-    @IBAction func dialNowBtn(_ sender: UIButton) {
-    }
+
+    @IBOutlet weak var callBtn: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

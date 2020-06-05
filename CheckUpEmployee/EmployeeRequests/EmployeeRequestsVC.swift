@@ -114,11 +114,11 @@ class EmployeeRequestsVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-//        guard let userDataSB = storyboard?.instantiateViewController(withIdentifier: "userDataSB") as? UserDataTableViewController else { return }
+
+        guard let userDataSB = storyboard?.instantiateViewController(withIdentifier: "userDetailsViewControllerSB") as? UserDetailsViewController else { return }
         
-      //  userDataSB.patientData = users[indexPath.row]
-//        navigationController?.pushViewController(userDataSB, animated: true)
+//        userDataSB.patientData = users[indexPath.row]
+        navigationController?.pushViewController(userDataSB, animated: true)
     }
     
 

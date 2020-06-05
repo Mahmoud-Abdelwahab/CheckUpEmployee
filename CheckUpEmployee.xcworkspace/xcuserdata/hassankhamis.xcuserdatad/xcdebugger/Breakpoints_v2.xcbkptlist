@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0125D98E-9C23-4639-BE4D-1CA51AE17591"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3D3514A5-F31D-4784-BF34-73731C51BE27"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C7A322E7-AFC6-4262-9048-150D9C5A174B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/UserDetails/UserCustomCells/ViewController/ContactTableView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "numberOfSections(in:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0C8F77C3-9AD9-4CCD-BFF4-11F38C51BD71"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/UserDetails/UserCustomCells/ViewController/ContactTableView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E4AC2523-F4A1-4005-AE49-4BE52EA30437"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/UserDetails/UserCustomCells/ViewController/ContactTableView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "95D81144-98A0-4FCF-8E73-C0ECDB4B4FA6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/UserDetails/UserCustomCells/ViewController/ContactTableView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "125BFBBF-1D0B-414A-B7CB-2AC85CAF7F09"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/Base/TableViewDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9983ADD4-9401-4EF4-B87A-FF209B20D31A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/Base/TableViewDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FAF7FFAD-E83F-415B-9591-9CACF2C5BEEC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "UserDetailsTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "FAF7FFAD-E83F-415B-9591-9CACF2C5BEEC - c581f7a6e56624d9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CheckUpEmployee.UserDetailsTableViewController.contactTableView.getter : Swift.Optional&lt;CheckUpEmployee.ContactTableView&gt;"
+                  moduleName = "CheckUpEmployee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "FAF7FFAD-E83F-415B-9591-9CACF2C5BEEC - 93033e53a7d028cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CheckUpEmployee.UserDetailsTableViewController.contactTableView.setter : Swift.Optional&lt;CheckUpEmployee.ContactTableView&gt;"
+                  moduleName = "CheckUpEmployee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "FAF7FFAD-E83F-415B-9591-9CACF2C5BEEC - 8f2448a71c00b5dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CheckUpEmployee.UserDetailsTableViewController.contactTableView.modify : Swift.Optional&lt;CheckUpEmployee.ContactTableView&gt;"
+                  moduleName = "CheckUpEmployee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "FAF7FFAD-E83F-415B-9591-9CACF2C5BEEC - a550d21e46759523"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CheckUpEmployee.UserDetailsTableViewController.contactTableView.modify : Swift.Optional&lt;CheckUpEmployee.ContactTableView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "CheckUpEmployee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "FAF7FFAD-E83F-415B-9591-9CACF2C5BEEC - cb86ae3a891bb048"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CheckUpEmployee.UserDetailsTableViewController.init(style: __C.UITableViewStyle) -&gt; CheckUpEmployee.UserDetailsTableViewController"
+                  moduleName = "CheckUpEmployee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  uuid = "FAF7FFAD-E83F-415B-9591-9CACF2C5BEEC - bb7542f82a52d6d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CheckUpEmployee.UserDetailsTableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CheckUpEmployee.UserDetailsTableViewController"
+                  moduleName = "CheckUpEmployee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "182">
+               </Location>
+               <Location
+                  uuid = "FAF7FFAD-E83F-415B-9591-9CACF2C5BEEC - 580389d10a187510"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CheckUpEmployee.UserDetailsTableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CheckUpEmployee.UserDetailsTableViewController&gt;"
+                  moduleName = "CheckUpEmployee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "107">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "41F3D80A-0DB5-4DA2-80D5-FDC57CF90139"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/Base/TableViewDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "tableView(_:trailingSwipeActionsConfigurationForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0034C4C3-06E3-4DCD-A6EC-E902117EE7F3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/Base/TableViewDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "tableView(_:trailingSwipeActionsConfigurationForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1781B46F-6B69-47AC-9003-608E29658F68"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/Base/TableViewDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "callNumber(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D56CC0CB-7A96-44A1-91BA-A2F603E90DC5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/EmployeeRequests/EmployeeRequestsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B96C07E-253F-427C-B226-7549DB0561EC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "62647AE0-3835-44A3-873B-5C5E36EFE5E0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/EmployeeRequests/EmployeeRequestsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
