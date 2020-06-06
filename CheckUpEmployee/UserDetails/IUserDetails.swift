@@ -14,7 +14,7 @@ protocol  IUserDetailsView {
     func OnFail(message :String)
 }
 
-protocol  IUserDetailsPresenter :IBase , ICheckConnection {
+protocol  IUserDetailsPresenter {
     func updateTestStatus(testId : Int64)
     func onSuccess()
     func OnFail(message :String)

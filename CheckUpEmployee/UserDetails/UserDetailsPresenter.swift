@@ -7,3 +7,25 @@
 //
 
 import Foundation
+class UserDetailsPresenter: IUserDetailsPresenter {
+    var userDetailsViewRef: IUserDetailsView!
+    init(userDetailsViewRef: IUserDetailsView) {
+        self.userDetailsViewRef = userDetailsViewRef
+    }
+    func updateTestStatus(testId: Int64) {
+        var userDetailsModel = UserDetailsModel(userDetailsPresenterRef: self)
+        userDetailsModel.updateTestStatus(testId: testId)
+    }
+    
+    func onSuccess() {
+        userDetailsViewRef.getResult()
+    }
+    
+    func OnFail(message: String) {
+        userDetailsViewRef.OnFail(message: message)
+    }
+    
+
+   
+    
+}
