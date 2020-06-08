@@ -9,18 +9,19 @@
 import Foundation
 
 protocol  IUserDetailsView {
-    func OnReceiveUser(user : User)
+//    func OnReceiveUser(user : User)
+    func getResult()
     func OnFail(message :String)
 }
 
 protocol  IUserDetailsPresenter :IBase , ICheckConnection {
-    func getUserRequests(employeeId : String)
-    func OnReceiveUser(user : User)
-      func OnFail(message :String)
+    func updateTestStatus(testId : Int64)
+    func onSuccess()
+    func OnFail(message :String)
 }
 
 protocol  IUserDetailsModel  {
-    func getUserRequests(employeeId : String)
+    func updateTestStatus(testId : Int64)
     //  i think that no need for model here
     // i might use presenter only to do my logic
 }

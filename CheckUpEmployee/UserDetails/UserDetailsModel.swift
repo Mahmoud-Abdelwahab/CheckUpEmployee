@@ -7,3 +7,26 @@
 //
 
 import Foundation
+import Alamofire
+class UserDetailsModel: IUserDetailsModel {
+    var userDetailsPresenterRef : IUserDetailsPresenter!
+    init(userDetailsPresenterRef : IUserDetailsPresenter) {
+        self.userDetailsPresenterRef = userDetailsPresenterRef
+    }
+    func updateTestStatus(testId: Int64) {
+        var updateStatus = UpdateStatus(id: testId, status: "PendingForResult")
+        let updateStatusDic = try! DictionaryEncoder.encode(updateStatus)
+        let urlString = "http://checkup.somee.com/api/AnalysisService/UpdateTakeSampleStatus"
+        Alamofire.request(urlString, method: .post , parameters: updateStatusDic , encoding: JSONEncoding.default, headers: nil).responseJSON {
+                      response in
+          switch response.result {
+                             case .success:
+                                print(response)
+            self.userDetailsPresenterRef.onSuccess()
+                             case .failure(let error):
+                                self.userDetailsPresenterRef.OnFail(message: "An error occured please try again later")
+                             }
+        
+                  }
+    }
+}
