@@ -37,7 +37,7 @@ extension MKMapView {
         if(show) {
             addAnnotations(annotations)
         }
-        setVisibleMapRect(zoomRect, edgePadding: UIEdgeInsets(top: 100, left: 100, bottom: 100, right: 100), animated: true)
+        setVisibleMapRect(zoomRect, edgePadding: UIEdgeInsets(top: 200, left: 200, bottom: 200, right: 200), animated: true)
     }
 
 }
