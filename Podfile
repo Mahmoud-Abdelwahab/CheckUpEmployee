@@ -15,6 +15,7 @@ target 'CheckUpEmployee' do
   pod 'SkyFloatingLabelTextField', '~> 3.0'
   pod 'TransitionButton'
   pod 'Alamofire'
+  pod 'Firebase/Firestore'
   # Pods for CheckUpEmployee
 
 end
