@@ -79,21 +79,18 @@ class EmployeeRequestsModel : IEmployeeRequestsModel
             {
                  db.collection("users").document(user.UserId!).getDocument {
                           (document  ,error) in
-                      print("document*******")
-                                 print(document)
-                      print("document******")
-//                  do {
-//
-//                     let requestsIds =  try JSONDecoder().decode([UserIds].self, from: document.data!)
-//                      print(requestsIds)
-//
-//                     self.getUserList(reqIdList: requestsIds)
-//
-//                   // self.empRequestPresenterRef.OnReceiveUserRequests(Requests: [User])
-//                  }catch let error{
-//
-//                   print(error)
-//                  }
+                 
+                   
+                  
+          
+                    
+                  do {
+
+                    //let x = try JSONDecoder().decode(User.self , from: document!.data())
+                  }catch let error{
+
+                   print(error)
+                  }
                       
                  
               

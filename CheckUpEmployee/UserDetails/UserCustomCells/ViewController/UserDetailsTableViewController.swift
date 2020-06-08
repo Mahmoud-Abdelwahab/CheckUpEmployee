@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import SDWebImage
+@available(iOS 13.0, *)
 class UserDetailsTableViewController: UITableViewController {
     @IBOutlet weak var photoCell: UITableViewCell!
     @IBOutlet weak var headerView: UIView!
