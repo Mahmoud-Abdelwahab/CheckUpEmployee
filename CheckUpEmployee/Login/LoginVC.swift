@@ -12,7 +12,7 @@ import SkyFloatingLabelTextField
 import Firebase
 import  SkyFloatingLabelTextField
 class LoginVC: UITableViewController,UITextFieldDelegate, IView  {
-    
+    var isLogout :Bool = false
     
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var logoImage: UIImageView!
@@ -21,18 +21,45 @@ class LoginVC: UITableViewController,UITextFieldDelegate, IView  {
     @IBOutlet weak var passWordTextView: SkyFloatingLabelTextFieldWithIcon!
     
     @IBOutlet weak var loginBtnOutlet: UIButton!
-    
+    var loginPresenter : LoginPresenter!
+    //
     override func viewWillAppear(_ animated: Bool) {
         
-        Auth.auth().currentUser
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        
+        //        let employeeRequest = self.storyboard?.instantiateViewController(withIdentifier: "EmpRequestSVC") as! EmployeeRequestsVC
+        //  employeeRequest.modalPresentationStyle = .fullScreen
+        
+        //        employeeRequest.fromLogout = {
+        //            self.isLogout = true
+        //
+        //        }
+        
+        
+        
     }
-      
+    
     //
     //    @IBOutlet weak var googleSignInBtn: GIDSignInButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        /// Google Sign In /
-     
+        
+        
+        
+        // let btn :  UIBarButtonItem = UIBarButtonItem()
+        //  self.navigationItem.setLeftBarButton(btn, animated: true)
+        
+        if Auth.auth().currentUser?.uid != nil && isLogout == false {
+            let employeeRequestsVC = self.storyboard!.instantiateViewController(withIdentifier: "EmpRequestSVC") as! EmployeeRequestsVC
+            
+            navigationController?.pushViewController(employeeRequestsVC, animated: true)
+        }
+        
+        /// Google Sign In //
+        //self.modalPresentationStyle = .fullScreen
+        //  self.present(self, animated: true, completion: nil)
+        loginPresenter = LoginPresenter(loginViewRef: self)
         loginBtnOutlet.layer.cornerRadius=30
         loginBtnOutlet.layer.borderColor=UIColor.white.cgColor
         loginBtnOutlet.layer.borderWidth=2
@@ -70,7 +97,7 @@ class LoginVC: UITableViewController,UITextFieldDelegate, IView  {
         
         
         if (emailTextView.text?.isEmpty == false && passWordTextView.text?.isEmpty == false){
-            var loginPresenter : LoginPresenter = LoginPresenter(loginViewRef: self)
+            
             loginPresenter.checkUser(email: emailTextView.text!, password: passWordTextView.text!)
             //  Login code
         }
@@ -84,23 +111,23 @@ class LoginVC: UITableViewController,UITextFieldDelegate, IView  {
     
     
     
-//    @IBAction func resetPassword(_ sender: Any) {
-//
-//        let resetPassPopup = (
-//            storyboard?.instantiateViewController(
-//                withIdentifier: "resetPopUpTV"))!
-//        present(resetPassPopup, animated: true, completion: nil)
-//    }
-//
-//    @IBAction func goToSignupSB(_ sender: Any) {
-//        
-//        let signup = (
-//            storyboard?.instantiateViewController(
-//                withIdentifier: "signupSVC"))!
-//        
-//        present(signup, animated: true, completion: nil)
-//        
-//    }
+    //    @IBAction func resetPassword(_ sender: Any) {
+    //
+    //        let resetPassPopup = (
+    //            storyboard?.instantiateViewController(
+    //                withIdentifier: "resetPopUpTV"))!
+    //        present(resetPassPopup, animated: true, completion: nil)
+    //    }
+    //
+    //    @IBAction func goToSignupSB(_ sender: Any) {
+    //
+    //        let signup = (
+    //            storyboard?.instantiateViewController(
+    //                withIdentifier: "signupSVC"))!
+    //
+    //        present(signup, animated: true, completion: nil)
+    //
+    //    }
     
     
     
@@ -109,15 +136,32 @@ class LoginVC: UITableViewController,UITextFieldDelegate, IView  {
 
 
 
-extension LoginVC : ILoginVC {
-   //var activityIndicator: UIActivityIndicatorView!
+extension LoginVC : ILoginVC , LogoutDelegate {
+    func logMeout() {
+        isLogout = true
+    }
+    
+    func onEmplopyeeExists() {
+        let employeeRequestsVC = self.storyboard!.instantiateViewController(withIdentifier: "EmpRequestSVC") as! EmployeeRequestsVC
+        //  employeeRequestsVC.modalPresentationStyle = .fullScreen
+        self.present(employeeRequestsVC, animated: true, completion: nil)
+    }
+    
+    //var activityIndicator: UIActivityIndicatorView!
+    
     func userValidation() {
-       // dismiss(animated: true, completion: nil)
+        // dismiss(animated: true, completion: nil)
         print("Loged Successfuly ... ")
         
         
-        let employeeRequest = self.storyboard?.instantiateViewController(withIdentifier: "EmpRequestSVC") 
-        navigationController?.pushViewController(employeeRequest!, animated: true)
+        let employeeRequest = self.storyboard?.instantiateViewController(withIdentifier: "EmpRequestSVC") as! EmployeeRequestsVC
+        navigationController?.pushViewController(employeeRequest, animated: true)
+        
+        //        let nav = UINavigationController.init(rootViewController:employeeRequest )
+        //        employeeRequest.modalPresentationStyle = .fullScreen
+        //        nav.present(employeeRequest, animated: true, completion: nil)
+        //        employeeRequest!.modalPresentationStyle = .pageSheet
+        //        self.present(employeeRequest!, animated: true, completion: nil)
         
     }
     
@@ -130,10 +174,10 @@ extension LoginVC : ILoginVC {
     
     func hideIndicator() {
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
-          activityIndicator.isHidden = true
+        activityIndicator.isHidden = true
         //activityIndicator.hide()
         loginBtnOutlet.alpha = 1
-       activityIndicator.stopAnimating()
+        activityIndicator.stopAnimating()
     }
     
     func errorMessage(msg: String) {

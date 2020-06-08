@@ -33,12 +33,46 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Results" id="4Ir-G8-mnt"/>
+                    <navigationItem key="navigationItem" title="Results" id="4Ir-G8-mnt">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="9f0-sC-nzz">
+                            <connections>
+                                <action selector="logoutBtn:" destination="avz-MO-jAU" id="38X-QQ-Qjz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nhe-d9-hYu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2381" y="-70"/>
+            <point key="canvasLocation" x="1964" y="-61"/>
+        </scene>
+        <!--loginSVC-->
+        <scene sceneID="4qM-DX-MAg">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="loginSVC" storyboardName="Login" referencedIdentifier="loginSVC" id="tMR-2k-LQy" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="eu7-Cx-q08"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sue-uB-GZM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2346" y="-186"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DjU-dp-6Kr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H8p-Sl-ioV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LPO-vF-k5a">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="avz-MO-jAU" kind="relationship" relationship="rootViewController" id="0lT-0G-eJk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e8K-8f-IYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1233" y="-61"/>
         </scene>
     </scenes>
 </document>

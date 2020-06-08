@@ -9,12 +9,16 @@
 import Foundation
 protocol ILoginVC : IBase {
     func userValidation ()
+    func onEmplopyeeExists()
 }
 protocol ILoginPresenter {
     func checkUser(email: String,password: String)
+    func isEmployeeExists()
+    func onEmplopyeeExistsModel()
     func onSuccess()
     func onFail(message: String)
 }
 protocol ILoginModel {
     func checkUser(email: String,password: String)
+   func isEmployeeModel()
 }

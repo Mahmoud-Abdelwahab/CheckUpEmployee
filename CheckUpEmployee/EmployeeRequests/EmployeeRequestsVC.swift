@@ -8,11 +8,40 @@
 
 import UIKit
 import SDWebImage
+import Firebase
 class EmployeeRequestsVC: UITableViewController {
-    var users : [User] = [User]()
+    var users  = [User]()
+    var fromLogout:(()->())?
+    var employeeRequestPresenter:EmployeeRequestsPresenter!
+    //var logoutDelegate:LogoutDelegate!
+    @IBAction func logoutBtn(_ sender: Any){
+        print("Logout ..")
+        guard  let loginVC = self.storyboard?.instantiateViewController(withIdentifier: "loginSVC") as? LoginVC else {return}
+               loginVC.logMeout()
+         do{
+                try Auth.auth().signOut()
+               
+            }
+            catch{
+        
+            }
 
+        navigationController?.popViewController(animated: true)
+    }
+    
+
+    override func viewWillAppear(_ animated: Bool) {
+           navigationController?.setNavigationBarHidden(false, animated: true)
+        
+        self.navigationItem.setHidesBackButton(true, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+         employeeRequestPresenter = EmployeeRequestsPresenter (empRequestViewRef: self)
+        employeeRequestPresenter.getUserRequests()
+        
         
         let user : User = User(id: "sfsdfs", name: "Mahmoud", email: "mahmoudabdelwahab199390@gmail.com", birthdate: "25-11-1993", gender: "male", phone: [Phone(number: "01149060094", isLand: false)], insurance: "Yes", address: Address(address1: "Qenaa", buildingNo: "1", floorNo: "1", apartmentNo: "2", longitude: 90.0, latitude: 120.45), imagePath:"https://firebasestorage.googleapis.com/v0/b/checkup-23ffe.appspot.com/o/users.png?alt=media&token=8fba9f3d-0739-4b7f-afab-8ae7b6e1c442")
             
@@ -35,7 +64,7 @@ class EmployeeRequestsVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-       return 80
+       return 90
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -68,19 +97,6 @@ class EmployeeRequestsVC: UITableViewController {
           alert.addAction(okAction)
                 
           self.present(alert, animated: true, completion: nil)
-            
-            
-            //GoogleMaps
-//
-//            if (UIApplication.sharedApplication().canOpenURL(NSURL(string:"comgooglemaps://")!)) {
-//              UIApplication.sharedApplication().openURL(NSURL(string:
-//                  "comgooglemaps://?center=40.765819,-73.975866&zoom=14&views=traffic")!)
-//            } else {
-//              NSLog("Can't use Google Maps");
-//            }
-
-             
-
             //Apple Maps
 
             if (UIApplication.shared.canOpenURL(NSURL(string:"http://maps.apple.com")! as URL)) {
@@ -99,12 +115,7 @@ class EmployeeRequestsVC: UITableViewController {
             print("Calling .........")
            guard let number = URL(string: "tel://" + "4151231234") else { return }
             UIApplication.shared.open(number)
-            
-//            let alert = UIAlertController(title: "Subscribed!", message: "Call Mahmoud Cell number : \(indexPath.row)", preferredStyle: .alert)
-//          let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-//          alert.addAction(okAction)
-//                
-//          self.present(alert, animated: true, completion: nil)
+            //makePhoneCall(phoneNumber: users[2].phon[0])
         }
        
         
@@ -112,6 +123,22 @@ class EmployeeRequestsVC: UITableViewController {
 
         return cell
     }
+    
+    func makePhoneCall(phoneNumber: String) {
+
+        if let phoneURL = NSURL(string: ("tel://" + phoneNumber)) {
+
+            let alert = UIAlertController(title: ("Call " + phoneNumber + "?"), message: nil, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Call", style: .default, handler: { (action) in
+                UIApplication.shared.open(phoneURL as URL, options: [:], completionHandler: nil)
+            }))
+
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //
@@ -166,4 +193,18 @@ class EmployeeRequestsVC: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+}
+
+extension EmployeeRequestsVC:IEmployeeRequestsView
+{
+    func OnReceiveUserRequests(Requests: [User]) {
+      users = Requests
+        tableView.reloadData()
+    }
+    
+    func OnFail(message: String) {
+      
+    }
+    
+ 
 }

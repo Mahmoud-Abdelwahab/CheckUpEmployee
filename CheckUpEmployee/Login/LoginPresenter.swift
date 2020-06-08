@@ -8,15 +8,29 @@
 	
 import Foundation
 class LoginPresenter: ILoginPresenter {
-    
-    var loginViewRef : ILoginVC!
-    init(loginViewRef : ILoginVC) {
-        self.loginViewRef = loginViewRef
+    func isEmployeeExists() {
     }
+    
+    var loginModel : LoginModel!
+    var loginViewRef : ILoginVC!
+     init(loginViewRef : ILoginVC) {
+         loginModel = LoginModel(loginPresenterRef: self)
+         self.loginViewRef = loginViewRef
+     }
+    
+    func isEmployee() {
+        loginModel.isEmployeeExists()
+    }
+    
+   func onEmplopyeeExistsModel() {
+    loginViewRef.onEmplopyeeExists()
+    }
+    
+    
+ 
     func checkUser(email: String,password: String){
         loginViewRef.showIndicator()
 
-        var loginModel = LoginModel(loginPresenterRef: self)
         loginModel.checkUser(email: email, password: password)
 //        loginModel.
     }

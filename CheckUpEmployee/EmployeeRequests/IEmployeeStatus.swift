@@ -8,17 +8,17 @@
 
 import Foundation
 
-protocol  IEmployeeStatusView {
+protocol  IEmployeeRequestsView {
     func OnReceiveUserRequests(Requests : [User])
     func OnFail(message :String)
 }
 
-protocol  IEmployeeStatusPresenter :IBase , ICheckConnection {
-    func getUserRequests(employeeId : String)
+protocol  IEmployeeRequestsPresenter :IBase , ICheckConnection {
+    func getUserRequests()
     func OnReceiveUserRequests(Requests : [User])
       func OnFail(message :String)
 }
 
-protocol  IEmployeeStatusModel  {
-    func getUserRequests(employeeId : String)
+protocol  IEmployeeRequestsModel  {
+    func getUserRequests()
 }

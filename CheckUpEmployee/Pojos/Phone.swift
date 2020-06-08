@@ -7,7 +7,7 @@
 //
 
 import Foundation
-struct Phone : Encodable {
+struct Phone : Codable {
     var number: String?
     var isLand: Bool?
 //    func toDictionary() -> Any {     return ["id": id, "number": number, "isLand": isLand] as Any }
