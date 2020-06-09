@@ -9,14 +9,24 @@
 import UIKit
 
 class UserDetailsViewController: UIViewController {
-
+    var user: User!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         // Do any additional setup after loading the view.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if #available(iOS 13.0, *) {
+            let destinationVC = segue.destination as! UserDetailsTableViewController
+            destinationVC.user = user
 
+        } else {
+            // Fallback on earlier versions
+        }
+    }
     /*
     // MARK: - Navigation
 
