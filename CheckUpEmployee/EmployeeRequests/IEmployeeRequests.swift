@@ -8,14 +8,14 @@
 
 import Foundation
 
-protocol  IEmployeeRequestsView {
-    func OnReceiveUserRequests(Requests : [User])
+protocol  IEmployeeRequestsView :IBase{
+    func OnReceiveUserRequests(Requests : [FullUser])
     func OnFail(message :String)
 }
 
 protocol  IEmployeeRequestsPresenter :IBase , ICheckConnection {
     func getUserRequests()
-    func OnReceiveUserRequests(Requests : [User])
+    func OnReceiveUserRequests(Requests : [FullUser])
       func OnFail(message :String)
 }
 

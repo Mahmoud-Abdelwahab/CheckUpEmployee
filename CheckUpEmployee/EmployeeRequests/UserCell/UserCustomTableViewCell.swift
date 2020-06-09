@@ -16,12 +16,11 @@ class UserCustomTableViewCell: UITableViewCell {
     
     ///    @IBOutlet weak var userAddress: UILabel!
     
-    @IBOutlet weak var callMeBtnOutlet: UIButton!
+    @IBOutlet weak var generatedCodeText: UILabel!
     
-    @IBAction func callMeBtn(_ sender: Any) {
-        
-          calMeClouser?()
-    }
+    @IBOutlet weak var dateTimeText: UILabel!
+    
+   
     @IBAction func getDirectionBtn(_ sender: Any) {
             getDirectionClosure?()
         

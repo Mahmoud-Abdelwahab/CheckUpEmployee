@@ -10,6 +10,10 @@ import Foundation
 
 class EmployeeRequestsPresenter:IEmployeeRequestsPresenter
 {
+    func OnReceiveUserRequests(Requests: [FullUser]) {
+       empRequestViewRef.OnReceiveUserRequests(Requests: Requests)
+    }
+    
    
     
     var empRequestViewRef : IEmployeeRequestsView!
@@ -22,9 +26,7 @@ class EmployeeRequestsPresenter:IEmployeeRequestsPresenter
                var check = InternetConnection.checkInternetConnection(iCheckConnection: self)
     }
     
-    func OnReceiveUserRequests(Requests: [User]) {
-        empRequestViewRef.OnReceiveUserRequests(Requests: Requests)
-    }
+   
     
     func OnFail(message: String) {
         

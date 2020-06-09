@@ -10,33 +10,36 @@ import Foundation
 import Alamofire
 import Firebase
 import FirebaseFirestore
+import SDWebImage
 class EmployeeRequestsModel : IEmployeeRequestsModel
 {
     
+    var ref: DatabaseReference!
     
-    var db: Firestore!
+    var userRequestsList : [FullUser]?
     
-    var reqIdList : [String]
     var empRequestPresenterRef : IEmployeeRequestsPresenter!
     init( empRequestPresenterRef : IEmployeeRequestsPresenter) {
         self.empRequestPresenterRef = empRequestPresenterRef
-        reqIdList = [String]()
         
-        let settings = FirestoreSettings()
-        Firestore.firestore().settings = settings
-        db = Firestore.firestore()
+        
+        ref = Database.database().reference(withPath:"Users");
+        userRequestsList = [FullUser]()
     }
     var myClosureEmpIsFound :(()->())?
     func getUserRequests() {
         
-        
+       // var apiData = [UserIds]()
         //  let employeeID = Auth.auth().currentUser!.uid
-        let urlString = "http://www.checkup.somee.com/api/AnalysisService/GetUsersByEmployeeId"
+        // let urlString = "http://www.checkup.somee.com/api/AnalysisService/GetUsersByEmployeeId"
         //   let params: [String: String] = ["Id": testId]
         
-        
+        let urlString = "http://www.checkup.somee.com/api/AnalysisService/GetUsersByEmployeeId?employeeId=s0OQNt14ZfgLHtfheaB0igPnSqK2" //http://www.checkup.somee.com/api/AnalysisService/GetUsersByEmployeeId?employeeId=s0OQNt14ZfgLHtfheaB0igPnSqK2
         //http://www.checkup.somee.com/api/AnalysisService/GetUsersByEmployeeId?employeeId=2F7ztgZ0JLMHohwNPSPuABoNJPT2
-        Alamofire.request(urlString, method: .get,parameters:["employeeId" : Auth.auth().currentUser!.uid]  , headers: nil).responseString {
+        //        Alamofire.request(urlString, method: .get,parameters:["employeeId" : "s0OQNt14ZfgLHtfheaB0igPnSqK2"]  , headers: nil).responseString {
+        //            response in
+        
+        Alamofire.request(urlString, method: .get,encoding: JSONEncoding.default, headers: nil).responseString {
             response in
             
             guard response.value != nil
@@ -45,11 +48,27 @@ class EmployeeRequestsModel : IEmployeeRequestsModel
             
             do {
                 
-                let requestsIds =  try JSONDecoder().decode([UserIds].self, from: response.data!)
-                self.getUserList(reqIdList: requestsIds)
-                print(requestsIds)
-                print(requestsIds)
-                print(requestsIds)
+                let apiData =  try JSONDecoder().decode([UserIds].self, from: response.data!)
+                
+                for item in apiData
+                {
+                    var fullUser = FullUser()
+                    fullUser.UserId = item.UserId
+                    fullUser.TestId = item.TestId
+                    fullUser.timeForTakingSample = item.timeForTakingSample
+                    fullUser.dateForTakingSample = item.dateForTakingSample
+                    fullUser.generatedCode = item.generatedCode
+                    fullUser.address = item.address ;
+                     var  user = User()
+                     fullUser.fireBaseUser = user;
+                    self.userRequestsList?.append(fullUser)
+                }
+                
+                
+                
+                
+                self.getUsersList()
+                
                 
                 
                 // self.empRequestPresenterRef.OnReceiveUserRequests(Requests: [User])
@@ -72,19 +91,68 @@ class EmployeeRequestsModel : IEmployeeRequestsModel
     //                     return
     //                  }
     //
-    func getUserList(reqIdList : [UserIds]){
-          
+    func getUsersList(){
         
-        for user in  reqIdList
-        {
-            db.collection("users").document(user.UserId!).getDocument {
-                (document  ,error) in
+        // DispatchQueue.background(background: { },complition : {})
+        
+        var counter : Int  = 0 ;
+        guard  let userRequestsListExists = userRequestsList
+            else{
                 
-                let data = document?.data()
+                //** * * here if no requests for employee do somthing  ** ** * * * * *  //
+                empRequestPresenterRef.OnFail(message: "No Requests For you ")
                 
-            }
-            
+                return
         }
+        
+        for apiUser in userRequestsListExists
+        {
+            
+            ref.child(apiUser.UserId!).observe(.value){
+                SnapShoot in
+                
+                guard  let values = SnapShoot.value as?[String:Any] else{
+                    self.empRequestPresenterRef.OnFail(message: "No Requests For you ")
+                    return
+                    
+                }
+                // let values = SnapShoot.value as![String:Any]
+                do {
+                    
+                    self.userRequestsList![counter].fireBaseUser?.name = values["name"]as? String ?? ""
+                    self.userRequestsList![counter].fireBaseUser?.email = values["email"]as? String ?? ""
+                    self.userRequestsList![counter].fireBaseUser?.birthdate = values["birthdate"]as? String ?? ""
+                    self.userRequestsList![counter].fireBaseUser?.insurance = values["insurance"]as? String ?? ""
+                    self.userRequestsList![counter].fireBaseUser?.imagePath = values["imagePath"]as? String ?? ""
+                    
+                    let phones = values["phone"] as! NSArray
+                    var phoneArr = [Phone]()
+                    for phone in phones {
+                        let phoneDIc = phone as! NSDictionary
+                        var phone = Phone()
+                        phone.isLand = phoneDIc.value(forKey: "isLand") as! Bool
+                        phone.number = phoneDIc.value(forKey: "number") as! String
+                        phoneArr.append(phone)
+                    }
+
+                    
+                    self.userRequestsList![counter].fireBaseUser?.phone = phoneArr
+                    
+                    
+                    //  print("the name \(name) the user \(email) complithios is \(name)")
+                
+                    counter = counter + 1
+                    if counter >= userRequestsListExists.count{
+                        self.empRequestPresenterRef.OnReceiveUserRequests(Requests: self.userRequestsList ?? [] )
+                    }
+                    
+                } catch let error {
+                    print("error converting \(error)")
+                }
+            
+            }// firebase closure
+            
+        }// loop
         
         
         
@@ -96,7 +164,4 @@ class EmployeeRequestsModel : IEmployeeRequestsModel
     
     
 }
-
-
-
 

@@ -21,6 +21,7 @@
 		BB0631F52487708100729573 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0631F42487708100729573 /* Address.swift */; };
 		BB0631F92487712E00729573 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB0631FB2487712E00729573 /* Localizable.strings */; };
 		BB0D9175248A702A00D77EDE /* LogoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D9174248A702A00D77EDE /* LogoutDelegate.swift */; };
+		BB0F9ED2248FB9E100CF9E3B /* FullUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F9ED1248FB9E100CF9E3B /* FullUser.swift */; };
 		BB136EB6248D1A580003A9B7 /* UserIds.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB136EB5248D1A580003A9B7 /* UserIds.swift */; };
 		BB16C259248561A2009503A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C258248561A2009503A1 /* AppDelegate.swift */; };
 		BB16C25B248561A2009503A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C25A248561A2009503A1 /* SceneDelegate.swift */; };
@@ -36,7 +37,7 @@
 		BB16C28424857391009503A1 /* ILoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C28324857391009503A1 /* ILoginVC.swift */; };
 		BB16C286248574E4009503A1 /* EmployeeRequestsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C285248574E4009503A1 /* EmployeeRequestsPresenter.swift */; };
 		BB16C2882485750C009503A1 /* EmployeeRequestsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C2872485750C009503A1 /* EmployeeRequestsModel.swift */; };
-		BB16C28A2485752C009503A1 /* IEmployeeStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C2892485752C009503A1 /* IEmployeeStatus.swift */; };
+		BB16C28A2485752C009503A1 /* IEmployeeRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C2892485752C009503A1 /* IEmployeeRequests.swift */; };
 		BB16C28C24858D6A009503A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB16C28B24858D69009503A1 /* GoogleService-Info.plist */; };
 		BB16C29224859560009503A1 /* IBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C28E24859560009503A1 /* IBase.swift */; };
 		BB16C29324859560009503A1 /* ICheckConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C28F24859560009503A1 /* ICheckConnection.swift */; };
@@ -78,6 +79,7 @@
 		BB0631FA2487712E00729573 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BB0631FC2487713300729573 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BB0D9174248A702A00D77EDE /* LogoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutDelegate.swift; sourceTree = "<group>"; };
+		BB0F9ED1248FB9E100CF9E3B /* FullUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullUser.swift; sourceTree = "<group>"; };
 		BB136EB5248D1A580003A9B7 /* UserIds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIds.swift; sourceTree = "<group>"; };
 		BB16C255248561A2009503A1 /* CheckUpEmployee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckUpEmployee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB16C258248561A2009503A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,7 +97,7 @@
 		BB16C28324857391009503A1 /* ILoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILoginVC.swift; sourceTree = "<group>"; };
 		BB16C285248574E4009503A1 /* EmployeeRequestsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeRequestsPresenter.swift; sourceTree = "<group>"; };
 		BB16C2872485750C009503A1 /* EmployeeRequestsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeRequestsModel.swift; sourceTree = "<group>"; };
-		BB16C2892485752C009503A1 /* IEmployeeStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IEmployeeStatus.swift; sourceTree = "<group>"; };
+		BB16C2892485752C009503A1 /* IEmployeeRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IEmployeeRequests.swift; sourceTree = "<group>"; };
 		BB16C28B24858D69009503A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BB16C28E24859560009503A1 /* IBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBase.swift; sourceTree = "<group>"; };
 		BB16C28F24859560009503A1 /* ICheckConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ICheckConnection.swift; sourceTree = "<group>"; };
@@ -251,7 +253,7 @@
 				BB16C27E24856FF1009503A1 /* EmployeeRequestsVC.swift */,
 				BB16C285248574E4009503A1 /* EmployeeRequestsPresenter.swift */,
 				BB16C2872485750C009503A1 /* EmployeeRequestsModel.swift */,
-				BB16C2892485752C009503A1 /* IEmployeeStatus.swift */,
+				BB16C2892485752C009503A1 /* IEmployeeRequests.swift */,
 			);
 			path = EmployeeRequests;
 			sourceTree = "<group>";
@@ -294,6 +296,7 @@
 				BB0631F42487708100729573 /* Address.swift */,
 				BB136EB5248D1A580003A9B7 /* UserIds.swift */,
 				4E1CB73124893CD5009EEEC8 /* UpdateStatus.swift */,
+				BB0F9ED1248FB9E100CF9E3B /* FullUser.swift */,
 			);
 			path = Pojos;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				BB16C28424857391009503A1 /* ILoginVC.swift in Sources */,
 				4E2D6CC1248ABD1300FADA05 /* ZoomToFitAnnotation.swift in Sources */,
 				4E2D6CBB248A7FD600FADA05 /* TableViewDataSource.swift in Sources */,
+				BB0F9ED2248FB9E100CF9E3B /* FullUser.swift in Sources */,
 				BB16C2B02485AE75009503A1 /* ImgTableViewCell.swift in Sources */,
 				BB16C27824856DCB009503A1 /* LoginModel.swift in Sources */,
 				4E2D6CC4248ACCAF00FADA05 /* UIVIewGradient.swift in Sources */,
@@ -525,7 +529,7 @@
 				BB16C25B248561A2009503A1 /* SceneDelegate.swift in Sources */,
 				BB0631EF2487623400729573 /* Phone.swift in Sources */,
 				BB16C2882485750C009503A1 /* EmployeeRequestsModel.swift in Sources */,
-				BB16C28A2485752C009503A1 /* IEmployeeStatus.swift in Sources */,
+				BB16C28A2485752C009503A1 /* IEmployeeRequests.swift in Sources */,
 				BB0D9175248A702A00D77EDE /* LogoutDelegate.swift in Sources */,
 				BB16C2AE2485AE75009503A1 /* DataTableViewCell.swift in Sources */,
 				BB16C29224859560009503A1 /* IBase.swift in Sources */,
@@ -687,7 +691,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = HK.Checkup;
+				PRODUCT_BUNDLE_IDENTIFIER = Mahmoud.kasper93;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -706,7 +710,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = HK.Checkup;
+				PRODUCT_BUNDLE_IDENTIFIER = Mahmoud.kasper93;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

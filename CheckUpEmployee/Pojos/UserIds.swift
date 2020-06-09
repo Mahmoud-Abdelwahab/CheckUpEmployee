@@ -9,7 +9,11 @@
 import Foundation
 
 struct UserIds : Codable{
-
-     var TestId: Int64?
-        var UserId: String?
+    
+    var TestId: Int64?
+    var UserId: String?
+    var address : Address?
+    var timeForTakingSample : String?
+    var dateForTakingSample : String?
+    var generatedCode : String?
 }

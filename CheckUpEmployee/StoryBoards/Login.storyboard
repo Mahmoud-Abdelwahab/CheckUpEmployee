@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="42a-8H-3de">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -236,73 +237,6 @@
                                                 <constraint firstItem="hWy-Ks-chh" firstAttribute="centerY" secondItem="jN7-RZ-ASN" secondAttribute="centerY" id="RKF-Qo-AMQ"/>
                                                 <constraint firstItem="hWy-Ks-chh" firstAttribute="centerX" secondItem="jN7-RZ-ASN" secondAttribute="centerX" id="Snx-Z8-KGC"/>
                                                 <constraint firstItem="Weh-RQ-OYI" firstAttribute="centerX" secondItem="jN7-RZ-ASN" secondAttribute="centerX" id="krj-Nh-fH6"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43" id="5xE-K1-Ypc">
-                                        <rect key="frame" x="0.0" y="529" width="414" height="43"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5xE-K1-Ypc" id="LJi-G7-EhO">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g0b-wo-ddy">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
-                                                    <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qxa-2u-Fds">
-                                                            <rect key="frame" x="70" y="4" width="274" height="35"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyH-eq-iKP">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="189" height="35"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cf9-E3-QaA">
-                                                                    <rect key="frame" x="199" y="0.0" width="75" height="35"/>
-                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                                                    <state key="normal" title="Sign up!">
-                                                                        <color key="titleColor" red="0.021980820450513177" green="0.73312932565090749" blue="0.98534948243256693" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    </state>
-                                                                </button>
-                                                            </subviews>
-                                                        </stackView>
-                                                    </subviews>
-                                                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <constraints>
-                                                        <constraint firstItem="qxa-2u-Fds" firstAttribute="centerX" secondItem="g0b-wo-ddy" secondAttribute="centerX" id="HeL-dP-p6A"/>
-                                                        <constraint firstItem="qxa-2u-Fds" firstAttribute="centerY" secondItem="g0b-wo-ddy" secondAttribute="centerY" id="fzt-Gw-R2B"/>
-                                                    </constraints>
-                                                </view>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="g0b-wo-ddy" firstAttribute="leading" secondItem="LJi-G7-EhO" secondAttribute="leading" id="39p-Wl-dw9"/>
-                                                <constraint firstAttribute="trailing" secondItem="g0b-wo-ddy" secondAttribute="trailing" id="IP9-pg-qoY"/>
-                                                <constraint firstItem="g0b-wo-ddy" firstAttribute="top" secondItem="LJi-G7-EhO" secondAttribute="top" id="sbr-r1-QLj"/>
-                                                <constraint firstAttribute="bottom" secondItem="g0b-wo-ddy" secondAttribute="bottom" id="ywJ-mI-M9c"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="43" id="HB0-q3-T9y">
-                                        <rect key="frame" x="0.0" y="572" width="414" height="43"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HB0-q3-T9y" id="UWC-JP-MBf">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCI-ST-nfT">
-                                                    <rect key="frame" x="135" y="7" width="144" height="34"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <state key="normal" title="Forget password?">
-                                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="YCI-ST-nfT" firstAttribute="top" secondItem="UWC-JP-MBf" secondAttribute="top" constant="7" id="069-Zm-OJ9"/>
-                                                <constraint firstItem="YCI-ST-nfT" firstAttribute="centerX" secondItem="UWC-JP-MBf" secondAttribute="centerX" id="miT-Wc-L85"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

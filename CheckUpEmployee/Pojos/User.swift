@@ -8,15 +8,14 @@
 
 import Foundation
 
-struct User : Codable{
+class User : Codable{
     var id: String?
     var name:String?
     var email: String?
     var birthdate: String?
     var gender: String?
-    var phone: [Phone]?
+    var phone:  [Phone]?
     var insurance: String?
     var address: Address?
     var imagePath: String?
-    
 }

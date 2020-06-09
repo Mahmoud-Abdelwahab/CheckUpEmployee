@@ -60,7 +60,7 @@ class LoginVC: UITableViewController,UITextFieldDelegate, IView  {
         //self.modalPresentationStyle = .fullScreen
         //  self.present(self, animated: true, completion: nil)
         loginPresenter = LoginPresenter(loginViewRef: self)
-        loginBtnOutlet.layer.cornerRadius=30
+        loginBtnOutlet.layer.cornerRadius=10
         loginBtnOutlet.layer.borderColor=UIColor.white.cgColor
         loginBtnOutlet.layer.borderWidth=2
         
