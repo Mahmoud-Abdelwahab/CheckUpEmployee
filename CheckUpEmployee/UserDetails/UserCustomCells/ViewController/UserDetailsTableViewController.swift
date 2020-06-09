@@ -57,10 +57,7 @@ class UserDetailsTableViewController: UITableViewController {
 //                gradient.endPoint = CGPoint(x: 1, y: 0)
         
         
-        var phone1 = Phone(number: "01121502499", isLand: false)
-        var phone2 = Phone(number: "03488888", isLand: true)
-        var address = Address(address1: "denokrat street - el Azarita,bab sharq, Alexandria", buildingNo: "2", floorNo: "5", apartmentNo: "30", longitude: 29.910315, latitude: 31.205498)
-        user = User(id: "5", name: "Hassan Khamis", email: "hassankhamis99@gmail.com", birthdate: "Feb 14, 1997", gender: "Male", phone: [phone1,phone2], insurance: "", address: address, imagePath: "https://image.shutterstock.com/image-photo/portrait-smiling-red-haired-millennial-260nw-1194497251.jpg")
+        
         dataSource = DataSource(phoneList: user.phone!)
         contactTableView.dataSource = dataSource
         contactTableView.delegate = dataSource
