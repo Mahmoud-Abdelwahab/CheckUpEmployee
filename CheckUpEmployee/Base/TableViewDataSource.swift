@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-@available(iOS 13.0, *)
+
 class DataSource: NSObject,
 
 UITableViewDataSource, UITableViewDelegate {
@@ -24,7 +24,7 @@ UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath) as! ContactTableViewCell
         
         cell.phoneNumberTxt.text = phoneList[indexPath.row].number!
-        cell.phoneTypeImage.image = phoneList[indexPath.row].isLand == true ?  UIImage(systemName: "teletype") : UIImage(systemName: "teletype.answer")
+       // cell.phoneTypeImage.image = phoneList[indexPath.row].isLand == true ?  UIImage(systemName: "teletype") : UIImage(systemName: "teletype.answer")
         cell.callBtn.tag = indexPath.row
         cell.callBtn.addTarget(self, action: #selector(callNumber), for: .touchUpInside)
         // Configure the cell...

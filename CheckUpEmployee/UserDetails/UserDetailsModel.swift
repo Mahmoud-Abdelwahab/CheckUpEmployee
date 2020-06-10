@@ -16,6 +16,7 @@ class UserDetailsModel: IUserDetailsModel {
     func updateTestStatus(testId: Int64) {
         var updateStatus = UpdateStatus(id: testId, status: "PendingForResult")
         let updateStatusDic = try! DictionaryEncoder.encode(updateStatus)
+        //"http://checkup.somee.com/api/AnalysisService/UpdateAnalysis"
         let urlString = "http://checkup.somee.com/api/AnalysisService/UpdateTakeSampleStatus"
         Alamofire.request(urlString, method: .post , parameters: updateStatusDic , encoding: JSONEncoding.default, headers: nil).responseJSON {
                       response in

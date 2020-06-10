@@ -358,7 +358,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8S9-Lg-tKX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4965.217391304348" y="610.71428571428567"/>
+            <point key="canvasLocation" x="6226" y="771"/>
         </scene>
         <!--User Details View Controller-->
         <scene sceneID="fA1-YB-vdg">
@@ -384,6 +384,9 @@
                                         <state key="normal" title="Take Sample">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="takeSampleBtn:" destination="7Wg-cL-aYc" eventType="touchUpInside" id="LVK-Zo-tFS"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -395,6 +398,10 @@
                                     <constraint firstAttribute="bottom" secondItem="x0e-0j-yZj" secondAttribute="bottom" id="sKI-TZ-NaZ"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="O9x-OG-VG9">
+                                <rect key="frame" x="197" y="413" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -408,10 +415,24 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xj1-xt-GtN"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicatore" destination="O9x-OG-VG9" id="eDA-Jo-lpw"/>
+                        <segue destination="Soi-xN-YkT" kind="push" id="HUh-TU-7m6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ryb-rl-UFe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5726" y="611"/>
+            <point key="canvasLocation" x="6228" y="35"/>
+        </scene>
+        <!--EmpRequestSVC-->
+        <scene sceneID="G88-BJ-KaX">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="EmpRequestSVC" storyboardName="EmployeeRequestsSB" referencedIdentifier="EmpRequestSVC" id="Soi-xN-YkT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Dl7-Ng-UhL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="55G-Ic-nPP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6912" y="-3"/>
         </scene>
         <!--Details View Controller-->
         <scene sceneID="lZp-wt-IQa">
@@ -886,7 +907,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9Y-ic-689" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5386" y="-4"/>
+            <point key="canvasLocation" x="4512" y="-101"/>
         </scene>
     </scenes>
     <resources>

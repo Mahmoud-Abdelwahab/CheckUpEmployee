@@ -10,7 +10,7 @@ import UIKit
 
 class UserDetailsVC: UITableViewController {
        
-    //    var patientData : User?
+        var patientData : FullUser?
 
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -28,21 +28,30 @@ class UserDetailsVC: UITableViewController {
             
             if indexPath.row == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "imgCell", for: indexPath) as! ImgTableViewCell
-    //
-    //            cell.patientImg.sd_setImage(with: URL(string: patientData?.imageURL ?? "placeholder.png"), placeholderImage:UIImage(named: "placeholder.png"))
+    
+                cell.patientImg.sd_setImage(with: URL(string: patientData!.fireBaseUser?.imagePath ?? "placeholder.png"), placeholderImage:UIImage(named: "placeholder.png"))
                     return cell
             } else if indexPath.row == 1 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "dataCell", for: indexPath) as! DataTableViewCell
                 
-    //            cell.nameLbl.text = patientData?.name
-    //            cell.ageLbl.text = String("\(patientData!.age)")
-    //            cell.addressLbl.text = patientData?.address
-    //            cell.dateLbl.text = patientData?.date
-    //            cell.timeLbl.text = patientData?.time
-    //            cell.phoneLbl.text = ""
-    //            for item in patientData?.phones ?? [""] {
-    //                cell.phoneLbl.text?.append(item+"\n")
-    //            }
+                cell.nameLbl.text = patientData!.fireBaseUser?.name
+                cell.ageLbl.text = String("\(patientData!.fireBaseUser?.birthdate ?? "" )")
+                cell.addressLbl.text = patientData?.address?.address1
+                cell.dateLbl.text = patientData?.dateForTakingSample
+                cell.timeLbl.text = patientData?.timeForTakingSample
+                
+                if let phoneArr = patientData?.fireBaseUser?.phone {
+                    for item in phoneArr {
+                                       
+                                       
+                                   }
+                }
+                    
+               
+//                cell.phoneLbl.text =
+//                for item in patientData?.phones ?? [""] {
+//                    cell.phoneLbl.text?.append(item+"\n")
+//                }
                 
                  return cell
                 

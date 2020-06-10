@@ -22,6 +22,7 @@
 		BB0631F92487712E00729573 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB0631FB2487712E00729573 /* Localizable.strings */; };
 		BB0D9175248A702A00D77EDE /* LogoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D9174248A702A00D77EDE /* LogoutDelegate.swift */; };
 		BB0F9ED2248FB9E100CF9E3B /* FullUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F9ED1248FB9E100CF9E3B /* FullUser.swift */; };
+		BB0F9ED42490103300CF9E3B /* EmployeeRequestsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F9ED32490103300CF9E3B /* EmployeeRequestsVC.swift */; };
 		BB136EB6248D1A580003A9B7 /* UserIds.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB136EB5248D1A580003A9B7 /* UserIds.swift */; };
 		BB16C259248561A2009503A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C258248561A2009503A1 /* AppDelegate.swift */; };
 		BB16C25B248561A2009503A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C25A248561A2009503A1 /* SceneDelegate.swift */; };
@@ -32,7 +33,6 @@
 		BB16C27624856DB7009503A1 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C27524856DB7009503A1 /* LoginPresenter.swift */; };
 		BB16C27824856DCB009503A1 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C27724856DCB009503A1 /* LoginModel.swift */; };
 		BB16C27B24856EA1009503A1 /* EmployeeRequestsSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB16C27A24856EA1009503A1 /* EmployeeRequestsSB.storyboard */; };
-		BB16C27F24856FF1009503A1 /* EmployeeRequestsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C27E24856FF1009503A1 /* EmployeeRequestsVC.swift */; };
 		BB16C282248571BB009503A1 /* UserDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB16C281248571BA009503A1 /* UserDetails.storyboard */; };
 		BB16C28424857391009503A1 /* ILoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C28324857391009503A1 /* ILoginVC.swift */; };
 		BB16C286248574E4009503A1 /* EmployeeRequestsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C285248574E4009503A1 /* EmployeeRequestsPresenter.swift */; };
@@ -59,6 +59,8 @@
 		BB1C09A02488446C000F24A6 /* UserDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1C099F2488446C000F24A6 /* UserDetailsModel.swift */; };
 		BB1C09A224884485000F24A6 /* IUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1C09A124884485000F24A6 /* IUserDetails.swift */; };
 		BB32A36E248CBD5D00EBF51F /* InternetConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32A36D248CBD5D00EBF51F /* InternetConnection.swift */; };
+		BB85C36D2490516500B5D5A7 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB85C36C2490516500B5D5A7 /* String.swift */; };
+		BB85C370249092D400B5D5A7 /* IOkAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB85C36F249092D400B5D5A7 /* IOkAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +82,7 @@
 		BB0631FC2487713300729573 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BB0D9174248A702A00D77EDE /* LogoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutDelegate.swift; sourceTree = "<group>"; };
 		BB0F9ED1248FB9E100CF9E3B /* FullUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullUser.swift; sourceTree = "<group>"; };
+		BB0F9ED32490103300CF9E3B /* EmployeeRequestsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeRequestsVC.swift; sourceTree = "<group>"; };
 		BB136EB5248D1A580003A9B7 /* UserIds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIds.swift; sourceTree = "<group>"; };
 		BB16C255248561A2009503A1 /* CheckUpEmployee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckUpEmployee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB16C258248561A2009503A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,7 +95,6 @@
 		BB16C27524856DB7009503A1 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		BB16C27724856DCB009503A1 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		BB16C27A24856EA1009503A1 /* EmployeeRequestsSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EmployeeRequestsSB.storyboard; sourceTree = "<group>"; };
-		BB16C27E24856FF1009503A1 /* EmployeeRequestsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeRequestsVC.swift; sourceTree = "<group>"; };
 		BB16C281248571BA009503A1 /* UserDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserDetails.storyboard; sourceTree = "<group>"; };
 		BB16C28324857391009503A1 /* ILoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILoginVC.swift; sourceTree = "<group>"; };
 		BB16C285248574E4009503A1 /* EmployeeRequestsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeRequestsPresenter.swift; sourceTree = "<group>"; };
@@ -119,6 +121,8 @@
 		BB1C099F2488446C000F24A6 /* UserDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsModel.swift; sourceTree = "<group>"; };
 		BB1C09A124884485000F24A6 /* IUserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUserDetails.swift; sourceTree = "<group>"; };
 		BB32A36D248CBD5D00EBF51F /* InternetConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnection.swift; sourceTree = "<group>"; };
+		BB85C36C2490516500B5D5A7 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		BB85C36F249092D400B5D5A7 /* IOkAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOkAlert.swift; sourceTree = "<group>"; };
 		F0AAD1A20ADC73AEE4F13391 /* Pods_CheckUpEmployee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckUpEmployee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -155,6 +159,7 @@
 		4E2D6CBE248ABCEE00FADA05 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				BB85C36E2490518700B5D5A7 /* String+Extention */,
 				4E2D6CC2248ACC9400FADA05 /* UIView */,
 				4E2D6CBF248ABCF600FADA05 /* MapView */,
 			);
@@ -250,7 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				BB16C29C2485AE75009503A1 /* UserCell */,
-				BB16C27E24856FF1009503A1 /* EmployeeRequestsVC.swift */,
+				BB0F9ED32490103300CF9E3B /* EmployeeRequestsVC.swift */,
 				BB16C285248574E4009503A1 /* EmployeeRequestsPresenter.swift */,
 				BB16C2872485750C009503A1 /* EmployeeRequestsModel.swift */,
 				BB16C2892485752C009503A1 /* IEmployeeRequests.swift */,
@@ -320,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				BB16C2972485992E009503A1 /* Alert.swift */,
+				BB85C36F249092D400B5D5A7 /* IOkAlert.swift */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -370,6 +376,14 @@
 				BB16C2A92485AE75009503A1 /* MapViewTableViewCell.xib */,
 			);
 			path = MapViewCustomCell;
+			sourceTree = "<group>";
+		};
+		BB85C36E2490518700B5D5A7 /* String+Extention */ = {
+			isa = PBXGroup;
+			children = (
+				BB85C36C2490516500B5D5A7 /* String.swift */,
+			);
+			path = "String+Extention";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -525,16 +539,18 @@
 				BB16C259248561A2009503A1 /* AppDelegate.swift in Sources */,
 				BB16C29424859560009503A1 /* IView.swift in Sources */,
 				BB1C09A224884485000F24A6 /* IUserDetails.swift in Sources */,
-				BB16C27F24856FF1009503A1 /* EmployeeRequestsVC.swift in Sources */,
 				BB16C25B248561A2009503A1 /* SceneDelegate.swift in Sources */,
 				BB0631EF2487623400729573 /* Phone.swift in Sources */,
 				BB16C2882485750C009503A1 /* EmployeeRequestsModel.swift in Sources */,
 				BB16C28A2485752C009503A1 /* IEmployeeRequests.swift in Sources */,
 				BB0D9175248A702A00D77EDE /* LogoutDelegate.swift in Sources */,
+				BB85C36D2490516500B5D5A7 /* String.swift in Sources */,
 				BB16C2AE2485AE75009503A1 /* DataTableViewCell.swift in Sources */,
 				BB16C29224859560009503A1 /* IBase.swift in Sources */,
+				BB85C370249092D400B5D5A7 /* IOkAlert.swift in Sources */,
 				BB16C29524859560009503A1 /* IViewAdvancedAlert.swift in Sources */,
 				BB136EB6248D1A580003A9B7 /* UserIds.swift in Sources */,
+				BB0F9ED42490103300CF9E3B /* EmployeeRequestsVC.swift in Sources */,
 				4E2D6CB4248A75D500FADA05 /* ContactTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

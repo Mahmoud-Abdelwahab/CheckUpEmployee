@@ -7,14 +7,28 @@
 //
 
 import Foundation
-class UserDetailsPresenter: IUserDetailsPresenter {
+class UserDetailsPresenter: IUserDetailsPresenter ,ICheckConnection {
+    var testID :Int64?
+    
+    func onSucessfullyConnected() {
+        var userDetailsModel = UserDetailsModel(userDetailsPresenterRef: self)
+        userDetailsModel.updateTestStatus(testId: testID!)
+        
+      
+    }
+    
+    func onFailConnected() {
+        self.OnFail(message: "NO_INTERNET_CONNECTION".localized)
+    }
+    
     var userDetailsViewRef: IUserDetailsView!
     init(userDetailsViewRef: IUserDetailsView) {
         self.userDetailsViewRef = userDetailsViewRef
     }
     func updateTestStatus(testId: Int64) {
-        var userDetailsModel = UserDetailsModel(userDetailsPresenterRef: self)
-        userDetailsModel.updateTestStatus(testId: testId)
+        self.testID = testId
+         var check = InternetConnection.checkInternetConnection(iCheckConnection: self)
+        
     }
     
     func onSuccess() {

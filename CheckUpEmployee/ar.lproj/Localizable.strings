@@ -5,3 +5,13 @@
   Created by kasper on 6/3/20.
   Copyright © 2020 Mahmoud.kasper. All rights reserved.
 */
+"TakingSample" = "التأكيد" ;
+"SAMPLE_CONFIRMATION" = "هل حقا تريد التأكيد؟" ;
+
+"UPDATED_SUCCESSFULLY_TITLE" = "تنبية" ;
+"UPDATED_SUCCESSFULLY_MSG" = "تم !" ;
+
+
+"UPDATED_FAILED_TITLE" = "تنبية" ;
+"UPDATED_FAILED_MSG" = "حدث خطأ ما من فضلك حاول مرة اخرى " ;
+"NO_INTERNET_CONNECTION" = "لا يوجد إتصال بالإنترنت ";

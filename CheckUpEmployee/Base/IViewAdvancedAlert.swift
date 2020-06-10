@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-protocol IViewAdvancedAlert : UITableViewController  {
+protocol IViewAdvancedAlert : UIViewController  {
     func pressOk()
     func pressCancel()
 }
