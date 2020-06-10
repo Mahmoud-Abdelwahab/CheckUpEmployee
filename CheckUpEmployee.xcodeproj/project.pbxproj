@@ -41,7 +41,6 @@
 		BB16C29424859560009503A1 /* IView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C29024859560009503A1 /* IView.swift */; };
 		BB16C29524859560009503A1 /* IViewAdvancedAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C29124859560009503A1 /* IViewAdvancedAlert.swift */; };
 		BB16C2982485992E009503A1 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C2972485992E009503A1 /* Alert.swift */; };
-		BB16C29A2485AE04009503A1 /* UserDetailsSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB16C2992485AE04009503A1 /* UserDetailsSB.storyboard */; };
 		BB16C2AC2485AE75009503A1 /* UserCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C29D2485AE75009503A1 /* UserCustomTableViewCell.swift */; };
 		BB16C2AE2485AE75009503A1 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16C2A22485AE75009503A1 /* DataTableViewCell.swift */; };
 		BB16C2AF2485AE75009503A1 /* DataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB16C2A32485AE75009503A1 /* DataTableViewCell.xib */; };
@@ -102,7 +101,6 @@
 		BB16C29024859560009503A1 /* IView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IView.swift; sourceTree = "<group>"; };
 		BB16C29124859560009503A1 /* IViewAdvancedAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IViewAdvancedAlert.swift; sourceTree = "<group>"; };
 		BB16C2972485992E009503A1 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
-		BB16C2992485AE04009503A1 /* UserDetailsSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserDetailsSB.storyboard; sourceTree = "<group>"; };
 		BB16C29D2485AE75009503A1 /* UserCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCustomTableViewCell.swift; sourceTree = "<group>"; };
 		BB16C2A22485AE75009503A1 /* DataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
 		BB16C2A32485AE75009503A1 /* DataTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataTableViewCell.xib; sourceTree = "<group>"; };
@@ -285,7 +283,6 @@
 			children = (
 				BB85C38A2490C06400B5D5A7 /* Login.storyboard */,
 				BB85C3912490C0FC00B5D5A7 /* EmployeeRequestsSB.storyboard */,
-				BB16C2992485AE04009503A1 /* UserDetailsSB.storyboard */,
 				BB85C3982490C13700B5D5A7 /* UserDetails.storyboard */,
 			);
 			path = StoryBoards;
@@ -463,7 +460,6 @@
 				BB85C3882490C06400B5D5A7 /* Login.storyboard in Resources */,
 				BB16C2B12485AE75009503A1 /* ImgTableViewCell.xib in Resources */,
 				BB16C28C24858D6A009503A1 /* GoogleService-Info.plist in Resources */,
-				BB16C29A2485AE04009503A1 /* UserDetailsSB.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

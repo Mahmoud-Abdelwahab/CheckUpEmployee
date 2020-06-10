@@ -1,36 +1,36 @@
 
 /* Class = "UILabel"; text = "Building No. :"; ObjectID = "0Im-Jf-5De"; */
-"0Im-Jf-5De.text" = "Building No. :";
+"0Im-Jf-5De.text" = "رقم المبنى :";
 
 /* Class = "UIBarButtonItem"; title = "Filter"; ObjectID = "1ki-3D-tCk"; */
-"1ki-3D-tCk.title" = "Filter";
+"1ki-3D-tCk.title" = "فلتر";
 
 /* Class = "UILabel"; text = "Governerate : "; ObjectID = "3ag-VQ-Q0C"; */
-"3ag-VQ-Q0C.text" = "Governerate : ";
+"3ag-VQ-Q0C.text" = "المحافظة :";
 
 /* Class = "UILabel"; text = "Address Information"; ObjectID = "4h0-Sn-wq8"; */
-"4h0-Sn-wq8.text" = "Address Information";
+"4h0-Sn-wq8.text" = " تفاصيل العنوان :";
 
 /* Class = "UILabel"; text = "Address : "; ObjectID = "7Jd-Hi-kbM"; */
-"7Jd-Hi-kbM.text" = "Address : ";
+"7Jd-Hi-kbM.text" = "العنوان :  ";
 
 /* Class = "UILabel"; text = "Lab Name : "; ObjectID = "9Mz-z0-B1R"; */
-"9Mz-z0-B1R.text" = "Lab Name : ";
+"9Mz-z0-B1R.text" = "اسم المعمل ";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "AIo-Aw-Sa0"; */
 "AIo-Aw-Sa0.text" = "Label";
 
 /* Class = "UILabel"; text = "Available From Home : "; ObjectID = "AgD-b0-EzN"; */
-"AgD-b0-EzN.text" = "Available From Home : ";
+"AgD-b0-EzN.text" = "متاح من المنزل : ";
 
 /* Class = "UIButton"; normalTitle = "Request"; ObjectID = "BPG-Rw-778"; */
-"BPG-Rw-778.normalTitle" = "Request";
+"BPG-Rw-778.normalTitle" = "الطلبات ";
 
 /* Class = "UILabel"; text = "Mehatet EL-Raml Besides ayebd ok"; ObjectID = "BwE-wr-LFF"; */
-"BwE-wr-LFF.text" = "Mehatet EL-Raml Besides ayebd ok";
+"BwE-wr-LFF.text" = "محطة الرمل ";
 
 /* Class = "UILabel"; text = "Phone : "; ObjectID = "CpE-Tz-zme"; */
-"CpE-Tz-zme.text" = "Phone : ";
+"CpE-Tz-zme.text" = "الجوال :  : ";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "EdJ-sY-d3k"; */
 "EdJ-sY-d3k.text" = "Label";
@@ -39,28 +39,28 @@
 "Ehj-DN-nzJ.text" = "Label";
 
 /* Class = "UILabel"; text = "Contacts Information"; ObjectID = "FFg-h2-124"; */
-"FFg-h2-124.text" = "Contacts Information";
+"FFg-h2-124.text" = "بيانات الاتصال";
 
 /* Class = "UILabel"; text = "Alexandria"; ObjectID = "Fd2-ch-P1T"; */
-"Fd2-ch-P1T.text" = "Alexandria";
+"Fd2-ch-P1T.text" = "الإسكندرية";
 
 /* Class = "UILabel"; text = "Address :"; ObjectID = "Gpy-1g-k5L"; */
-"Gpy-1g-k5L.text" = "Address :";
+"Gpy-1g-k5L.text" = "العنوان : ";
 
 /* Class = "UILabel"; text = "this lab is the best out there "; ObjectID = "JxY-MN-T3a"; */
 "JxY-MN-T3a.text" = "this lab is the best out there ";
 
 /* Class = "UILabel"; text = "Floor No. :"; ObjectID = "L5z-c5-c2O"; */
-"L5z-c5-c2O.text" = "Floor No. :";
+"L5z-c5-c2O.text" = "رقم الطابق : ";
 
 /* Class = "UIButton"; normalTitle = "read more"; ObjectID = "M1S-MT-CLv"; */
 "M1S-MT-CLv.normalTitle" = "read more";
 
 /* Class = "UILabel"; text = "Apartment No. :"; ObjectID = "Mbe-xd-Rij"; */
-"Mbe-xd-Rij.text" = "Apartment No. :";
+"Mbe-xd-Rij.text" = "رقم الشقة : ";
 
 /* Class = "UILabel"; text = "Address : "; ObjectID = "NrD-Qy-fFR"; */
-"NrD-Qy-fFR.text" = "Address : ";
+"NrD-Qy-fFR.text" = "العنوان : ";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "Ovf-92-dZm"; */
 "Ovf-92-dZm.text" = "Label";
@@ -75,19 +75,20 @@
 "SVF-5T-V4V.text" = "586932015";
 
 /* Class = "UILabel"; text = "Work Time : "; ObjectID = "TB2-Mh-fli"; */
-"TB2-Mh-fli.text" = "Work Time : ";
+"TB2-Mh-fli.text" = "وقت العمل :  ";
 
 /* Class = "UILabel"; text = "age"; ObjectID = "UOV-bF-3cu"; */
-"UOV-bF-3cu.text" = "age";
+"UOV-bF-3cu.text" = "العمر ";
 
 /* Class = "UILabel"; text = "El-Borg"; ObjectID = "V7X-58-dFY"; */
 "V7X-58-dFY.text" = "El-Borg";
 
 /* Class = "UILabel"; text = "10 Am to 9 Pm"; ObjectID = "VOg-h8-v21"; */
-"VOg-h8-v21.text" = "10 Am to 9 Pm";
-
+"VOg-h8-v21.text" =
+"١٠ص إلى ٩م"
+;
 /* Class = "UILabel"; text = "Alexandria"; ObjectID = "azk-yY-6ae"; */
-"azk-yY-6ae.text" = "Alexandria";
+"azk-yY-6ae.text" = "الإسكندرية";
 
 /* Class = "UILabel"; text = "Friday"; ObjectID = "c7Y-4Z-49O"; */
 "c7Y-4Z-49O.text" = "Friday";
@@ -108,7 +109,7 @@
 "mHv-wC-vGL.text" = "Lab Name : ";
 
 /* Class = "UILabel"; text = "User Name"; ObjectID = "nct-WP-X6F"; */
-"nct-WP-X6F.text" = "User Name";
+"nct-WP-X6F.text" = "اسم المريض";
 
 /* Class = "UILabel"; text = "Reviews :"; ObjectID = "oEK-K0-5od"; */
 "oEK-K0-5od.text" = "Reviews :";
@@ -126,7 +127,7 @@
 "waR-Jr-SMo.text" = "Mahatet El-Raml";
 
 /* Class = "UIButton"; normalTitle = "Take Sample"; ObjectID = "x0e-0j-yZj"; */
-"x0e-0j-yZj.normalTitle" = "Take Sample";
+"x0e-0j-yZj.normalTitle" = "اخذ العينة ";
 
 /* Class = "UIButton"; normalTitle = "Start Navigation"; ObjectID = "zRk-Qk-3RH"; */
-"zRk-Qk-3RH.normalTitle" = "Start Navigation";
+"zRk-Qk-3RH.normalTitle" = "بدأ التجوال";
