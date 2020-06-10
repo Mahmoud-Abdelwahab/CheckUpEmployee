@@ -16,6 +16,7 @@
 		4E2D6CBD248AB6BB00FADA05 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2D6CBC248AB6BB00FADA05 /* UserDetailsViewController.swift */; };
 		4E2D6CC1248ABD1300FADA05 /* ZoomToFitAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2D6CC0248ABD1300FADA05 /* ZoomToFitAnnotation.swift */; };
 		4E2D6CC4248ACCAF00FADA05 /* UIVIewGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2D6CC3248ACCAF00FADA05 /* UIVIewGradient.swift */; };
+		4E408CF0249126F700766722 /* ApiUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E408CEF249126F700766722 /* ApiUrl.swift */; };
 		96D3ABAC4FA71904C9AD4A54 /* Pods_CheckUpEmployee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AAD1A20ADC73AEE4F13391 /* Pods_CheckUpEmployee.framework */; };
 		BB0631EF2487623400729573 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0631EE2487623400729573 /* Phone.swift */; };
 		BB0631F52487708100729573 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0631F42487708100729573 /* Address.swift */; };
@@ -72,6 +73,7 @@
 		4E2D6CBC248AB6BB00FADA05 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		4E2D6CC0248ABD1300FADA05 /* ZoomToFitAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomToFitAnnotation.swift; sourceTree = "<group>"; };
 		4E2D6CC3248ACCAF00FADA05 /* UIVIewGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewGradient.swift; sourceTree = "<group>"; };
+		4E408CEF249126F700766722 /* ApiUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrl.swift; sourceTree = "<group>"; };
 		5216FC7B931CF2FA8D79343F /* Pods-CheckUpEmployee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckUpEmployee.release.xcconfig"; path = "Target Support Files/Pods-CheckUpEmployee/Pods-CheckUpEmployee.release.xcconfig"; sourceTree = "<group>"; };
 		BB0631EE2487623400729573 /* Phone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
 		BB0631F42487708100729573 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
@@ -384,6 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				BB85C36C2490516500B5D5A7 /* String.swift */,
+				4E408CEF249126F700766722 /* ApiUrl.swift */,
 			);
 			path = "String+Extention";
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				BB16C29524859560009503A1 /* IViewAdvancedAlert.swift in Sources */,
 				BB136EB6248D1A580003A9B7 /* UserIds.swift in Sources */,
 				BB0F9ED42490103300CF9E3B /* EmployeeRequestsVC.swift in Sources */,
+				4E408CF0249126F700766722 /* ApiUrl.swift in Sources */,
 				4E2D6CB4248A75D500FADA05 /* ContactTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
