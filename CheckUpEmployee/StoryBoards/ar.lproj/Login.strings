@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Check Up"; ObjectID = "Mtn-UK-aZN"; */
+"Mtn-UK-aZN.text" = "Check Up";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "Sdi-Z7-y4r"; */
+"Sdi-Z7-y4r.placeholder" = "الباسورد";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "Weh-RQ-OYI"; */
+"Weh-RQ-OYI.normalTitle" = "تسجيل الدخول ";
+
+/* Class = "UINavigationItem"; title = "Login"; ObjectID = "g5C-I9-ozj"; */
+"g5C-I9-ozj.title" = "تسجيل الدخول ";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "r1n-W2-QV3"; */
+"r1n-W2-QV3.placeholder" = "الايميل";
+
+/* Class = "UIBarButtonItem"; title = "Requests"; ObjectID = "wrK-4d-Kqc"; */
+"wrK-4d-Kqc.title" = "الطلبات المتاحه";
