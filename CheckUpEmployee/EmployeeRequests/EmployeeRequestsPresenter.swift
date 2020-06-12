@@ -11,6 +11,8 @@ import Foundation
 class EmployeeRequestsPresenter:IEmployeeRequestsPresenter
 {
     func OnReceiveUserRequests(Requests: [FullUser]) {
+        empRequestViewRef.hideIndicator()
+
        empRequestViewRef.OnReceiveUserRequests(Requests: Requests)
     }
     
@@ -24,6 +26,7 @@ class EmployeeRequestsPresenter:IEmployeeRequestsPresenter
     func getUserRequests() {
         
                var check = InternetConnection.checkInternetConnection(iCheckConnection: self)
+   
     }
     
    
@@ -45,8 +48,10 @@ class EmployeeRequestsPresenter:IEmployeeRequestsPresenter
     }
     
     func onSucessfullyConnected() {
+        empRequestViewRef.showIndicator()
         var employeeRequestModel  = EmployeeRequestsModel( empRequestPresenterRef : self)
         employeeRequestModel.getUserRequests()
+        
     }
     
     func onFailConnected() {

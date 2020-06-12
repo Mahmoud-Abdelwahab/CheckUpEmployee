@@ -25,8 +25,8 @@ class EmployeeRequestsVC: UITableViewController {
     var employeeRequestPresenter:EmployeeRequestsPresenter!
 
     //var logoutDelegate:LogoutDelegate!
-
-    @IBOutlet weak var activityIndicstor: UIActivityIndicatorView!
+    var isWaitingData = true
+//    @IBOutlet weak var activityIndicstor: UIActivityIndicatorView!
     @IBAction func logoutBtn(_ sender: Any){
 
         print("Logout ..")
@@ -63,9 +63,9 @@ class EmployeeRequestsVC: UITableViewController {
 
         navigationController?.setNavigationBarHidden(false, animated: true)
 
-        activityIndicstor.isHidden = false
-   activityIndicstor.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
-        activityIndicstor.startAnimating()
+//        activityIndicstor.isHidden = false
+//   activityIndicstor.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+//        activityIndicstor.startAnimating()
         self.navigationItem.setHidesBackButton(true, animated: true)
         
         
@@ -123,8 +123,42 @@ class EmployeeRequestsVC: UITableViewController {
 
         // #warning Incomplete implementation, return the number of sections
 
-        return 1
-
+//        return 1
+        var numOfSections: Int = 0
+                if(isWaitingData){
+        //            let activityView = UIActivityIndicatorView(style: .whiteLarge)
+        //            activityView.center = self.view.center
+        //            activityView.startAnimating()
+        //
+        //            self.view.addSubview(activityView)
+        //            var activityView = UIActivityIndicatorView(style: .whiteLarge)
+        //            activityView.center = self.view.center
+        //            tableView.addSubview(activityView)
+        //            activityView.startAnimating()
+        //            numOfSections = 0
+                    numOfSections = 0
+        //            tableView.separatorStyle  = .none
+                    tableView.showActivityIndicator()
+                }
+                else{
+                        if userRequestsList!.count > 0
+                        {
+        //                    tableView.separatorStyle = .singleLine
+                            numOfSections = 1
+                            tableView.backgroundView = nil
+                        }
+                        else
+                        {
+                            numOfSections = 0
+                            let noDataLabel: UILabel  = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
+                            noDataLabel.text          = "An error occured please try again"
+                //            noDataLabel.textColor     = UIColor.black
+                            noDataLabel.textAlignment = .center
+                            tableView.backgroundView  = noDataLabel
+                            
+                        }
+                }
+                        return numOfSections
     }
 
     
@@ -139,11 +173,13 @@ class EmployeeRequestsVC: UITableViewController {
 
         // #warning Incomplete implementation, return the number of rows
         if userRequestsList!.count > 0{
-        activityIndicstor.isHidden = true
-            activityIndicstor.stopAnimating()
+//        activityIndicstor.isHidden = true
+//            activityIndicstor.stopAnimating()
         }
-        
+
         return userRequestsList?.count ?? 0
+        
+        
 
     }
 
@@ -319,9 +355,9 @@ class EmployeeRequestsVC: UITableViewController {
      }
     
     func hideIndicator() {
-
-        self.activityIndicstor.isHidden = true
-                   activityIndicstor.stopAnimating()
+        isWaitingData = false
+//        self.activityIndicstor.isHidden = true
+//                   activityIndicstor.stopAnimating()
 
     }
     
@@ -438,8 +474,8 @@ extension EmployeeRequestsVC:IEmployeeRequestsView
     
 
     func showIndicator() {
-
-        
+isWaitingData = true
+//        tableView.reloadData()
 
     }
 

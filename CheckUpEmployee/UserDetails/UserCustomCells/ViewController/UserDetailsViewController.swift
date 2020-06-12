@@ -17,7 +17,7 @@ class UserDetailsViewController: UIViewController,IViewAdvancedAlert{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        userRequestsSB = storyboard?.instantiateViewController(withIdentifier: "EmpRequestSVC") as! EmployeeRequestsVC
+//        userRequestsSB = storyboard?.instantiateViewController(withIdentifier: "EmpRequestSVC") as! EmployeeRequestsVC
        
     
            activityIndicatore.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
@@ -72,8 +72,8 @@ extension UserDetailsViewController : IUserDetailsView,IBase ,IView,IOkAlert
 {
     /// on press on  confirming that sample was taken
     func onOkClicked() {
-     
-                    navigationController?.pushViewController(userRequestsSB, animated: true)
+        navigationController?.popViewController(animated: true)
+//                    navigationController?.pushViewController(userRequestsSB, animated: true)
 
     }
     
