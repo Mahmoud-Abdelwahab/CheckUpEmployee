@@ -56,9 +56,6 @@ class EmployeeRequestsVC: UITableViewController {
     }
 
     
-
-    
-
     override func viewWillAppear(_ animated: Bool) {
 
         navigationController?.setNavigationBarHidden(false, animated: true)
@@ -93,23 +90,9 @@ class EmployeeRequestsVC: UITableViewController {
 
         
 
-        
-
-        
 
         tableView.register(UINib(nibName: "UserCustomTableViewCell", bundle: nil), forCellReuseIdentifier: "userCustomCell")
 
-        
-
-        //        users.append(user)
-
-        //        users.append(user)
-
-        //        users.append(user)
-
-        //        users.append(user)
-
-        
 
     }
 
@@ -161,13 +144,12 @@ class EmployeeRequestsVC: UITableViewController {
                         return numOfSections
     }
 
-    
-
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 
         return 95
 
     }
+
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
@@ -198,8 +180,6 @@ class EmployeeRequestsVC: UITableViewController {
         cell.generatedCodeText.text = userRequestsList?[indexPath.row].generatedCode ?? "-----"
 
 
-        
-
             let dateTime =  "\(userRequestsList?[indexPath.row].dateForTakingSample! ?? "") \(userRequestsList?[indexPath.row].timeForTakingSample! ?? "")"
 
     
@@ -214,7 +194,7 @@ class EmployeeRequestsVC: UITableViewController {
 
         
 
-        if let location = userRequestsList![indexPath.row].address {
+        if userRequestsList![indexPath.row].address != nil {
 
             //  cell.userAddress.text = users[indexPath.row].address
 
@@ -222,12 +202,7 @@ class EmployeeRequestsVC: UITableViewController {
 
         }
 
-        
-
-        //*************///
-
-        
-
+    
         // will be executed when user tap on the button
 
         // notice the capture block has [unowned self]
@@ -236,10 +211,7 @@ class EmployeeRequestsVC: UITableViewController {
 
         cell.getDirectionClosure = { [unowned self] in
 
-            
-
-            
-
+  
             let regionDistance : CLLocationDistance = 1000
 
             let coordinates = CLLocationCoordinate2DMake((self.userRequestsList?[indexPath.row].address!.latitude!)!, (self.userRequestsList?[indexPath.row].address!.longitude)!)
@@ -258,33 +230,6 @@ class EmployeeRequestsVC: UITableViewController {
 
                        mapItem.openInMaps(launchOptions: options)
 
-            //            let alert = UIAlertController(title: "Subscribed!", message: "Subscribed to Mahmoud Cell number : \(indexPath.row)", preferredStyle: .alert)
-
-            //          let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-
-            //          alert.addAction(okAction)
-
-            //
-
-            //          self.present(alert, animated: true, completion: nil)
-
-            //            //Apple Maps
-
-            //
-
-            //            if (UIApplication.shared.canOpenURL(NSURL(string:"http://maps.apple.com")! as URL)) {
-
-            //                UIApplication.shared.openURL(NSURL(string:
-
-            //                "http://maps.apple.com/?daddr=San+Francisco,+CA&saddr=cupertino")as! URL)
-
-            //              NSLog("Can't use Apple Maps");
-
-            //            }
-
-            //
-
-            
 
             
 

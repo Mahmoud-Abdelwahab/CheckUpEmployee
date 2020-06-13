@@ -34,11 +34,9 @@ class EmployeeRequestsModel : IEmployeeRequestsModel
         // let urlString = "http://www.checkup.somee.com/api/AnalysisService/GetUsersByEmployeeId"
         //   let params: [String: String] = ["Id": testId]
         
-        let urlString = "\(ApiUrl.API_URL)/api/AnalysisService/GetUsersByEmployeeId?employeeId=s0OQNt14ZfgLHtfheaB0igPnSqK2" //http://www.checkup.somee.com/api/AnalysisService/GetUsersByEmployeeId?employeeId=s0OQNt14ZfgLHtfheaB0igPnSqK2
-        //http://www.checkup.somee.com/api/AnalysisService/GetUsersByEmployeeId?employeeId=2F7ztgZ0JLMHohwNPSPuABoNJPT2
-        //        Alamofire.request(urlString, method: .get,parameters:["employeeId" : "s0OQNt14ZfgLHtfheaB0igPnSqK2"]  , headers: nil).responseString {
-        //            response in
-        
+        let id = Auth.auth().currentUser!.uid
+        ///8kYuK9fL2xeXBHtAh7ldnBcaiTD3
+        let urlString = "http://checkuplive.somee.com/api/analysisService/GetUsersByEmployeeId?employeeId=\(id)"
         Alamofire.request(urlString, method: .get,encoding: JSONEncoding.default, headers: nil).responseString {
             response in
             
