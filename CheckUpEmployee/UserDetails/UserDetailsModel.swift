@@ -8,12 +8,15 @@
 
 import Foundation
 import Alamofire
+import Firebase
 class UserDetailsModel: IUserDetailsModel {
     var userDetailsPresenterRef : IUserDetailsPresenter!
+    var ref: DatabaseReference!
     init(userDetailsPresenterRef : IUserDetailsPresenter) {
         self.userDetailsPresenterRef = userDetailsPresenterRef
+        ref = Database.database().reference()
     }
-    func updateTestStatus(testId: Int64) {
+    func updateTestStatus(testId: Int64, userId: String) {
         var updateStatus = UpdateStatus(id: testId, status: "PendingForResult")
         let updateStatusDic = try! DictionaryEncoder.encode(updateStatus)
         //"http://checkup.somee.com/api/AnalysisService/UpdateAnalysis"
@@ -23,6 +26,7 @@ class UserDetailsModel: IUserDetailsModel {
           switch response.result {
                              case .success:
                                 print(response)
+                                self.ref.child("Notification").child(userId).setValue(["getNotified": self.ref.childByAutoId().key!])
             self.userDetailsPresenterRef.onSuccess()
                              case .failure(let error):
                                 self.userDetailsPresenterRef.OnFail(message: "An error occured please try again later")

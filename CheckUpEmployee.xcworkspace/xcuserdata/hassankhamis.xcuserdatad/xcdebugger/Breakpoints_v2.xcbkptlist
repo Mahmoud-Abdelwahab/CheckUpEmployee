@@ -265,8 +265,8 @@
                   urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/Base/TableViewDataSource.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
                   offsetFromSymbolStart = "65">
                </Location>
                <Location
@@ -280,8 +280,8 @@
                   urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/Base/TableViewDataSource.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
                   offsetFromSymbolStart = "373">
                </Location>
             </Locations>
@@ -301,6 +301,38 @@
             endingLineNumber = "39"
             landmarkName = "tableView(_:trailingSwipeActionsConfigurationForRowAt:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0034C4C3-06E3-4DCD-A6EC-E902117EE7F3 - 5a267fbdc548911d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CheckUpEmployee.DataSource.tableView(_: __C.UITableView, trailingSwipeActionsConfigurationForRowAt: Foundation.IndexPath) -&gt; Swift.Optional&lt;__C.UISwipeActionsConfiguration&gt;"
+                  moduleName = "CheckUpEmployee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/Base/TableViewDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  uuid = "0034C4C3-06E3-4DCD-A6EC-E902117EE7F3 - 9d3e94c6d8bbc41e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIContextualAction, __C.UIView, (Swift.Bool) -&gt; ()) -&gt; () in CheckUpEmployee.DataSource.tableView(_: __C.UITableView, trailingSwipeActionsConfigurationForRowAt: Foundation.IndexPath) -&gt; Swift.Optional&lt;__C.UISwipeActionsConfiguration&gt;"
+                  moduleName = "CheckUpEmployee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/Base/TableViewDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "373">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -315,116 +347,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
             endingLineNumber = "50"
-            landmarkName = "callNumber(_:)"
+            landmarkName = "tableView(_:trailingSwipeActionsConfigurationForRowAt:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2B96C07E-253F-427C-B226-7549DB0561EC"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "UserDetailsViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "2B96C07E-253F-427C-B226-7549DB0561EC - 6fbfcd54da2ef31f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CheckUpEmployee.UserDetailsViewController.userRequestsSB.getter : Swift.Optional&lt;CheckUpEmployee.EmployeeRequestsVC&gt;"
-                  moduleName = "CheckUpEmployee"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "126">
-               </Location>
-               <Location
-                  uuid = "2B96C07E-253F-427C-B226-7549DB0561EC - 89425f3bec70b323"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CheckUpEmployee.UserDetailsViewController.userRequestsSB.setter : Swift.Optional&lt;CheckUpEmployee.EmployeeRequestsVC&gt;"
-                  moduleName = "CheckUpEmployee"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "160">
-               </Location>
-               <Location
-                  uuid = "2B96C07E-253F-427C-B226-7549DB0561EC - a3c0f2a269717310"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CheckUpEmployee.UserDetailsViewController.userRequestsSB.modify : Swift.Optional&lt;CheckUpEmployee.EmployeeRequestsVC&gt;"
-                  moduleName = "CheckUpEmployee"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "18">
-               </Location>
-               <Location
-                  uuid = "2B96C07E-253F-427C-B226-7549DB0561EC - 875409da26d5d9ee"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CheckUpEmployee.UserDetailsViewController.userRequestsSB.modify : Swift.Optional&lt;CheckUpEmployee.EmployeeRequestsVC&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "CheckUpEmployee"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  uuid = "2B96C07E-253F-427C-B226-7549DB0561EC - 22fd5cd816414336"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CheckUpEmployee.UserDetailsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CheckUpEmployee.UserDetailsViewController"
-                  moduleName = "CheckUpEmployee"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "383">
-               </Location>
-               <Location
-                  uuid = "2B96C07E-253F-427C-B226-7549DB0561EC - ac7fe93c7b58c7e1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CheckUpEmployee.UserDetailsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CheckUpEmployee.UserDetailsViewController&gt;"
-                  moduleName = "CheckUpEmployee"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "318">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -725,146 +649,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0733D189-A746-47D6-8F91-72A483F6BD31"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "UserDetailsViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "0733D189-A746-47D6-8F91-72A483F6BD31 - 881dfed7974ea0c8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CheckUpEmployee.UserDetailsViewController.fullUser.getter : Swift.Optional&lt;CheckUpEmployee.FullUser&gt;"
-                  moduleName = "CheckUpEmployee"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "122">
-               </Location>
-               <Location
-                  uuid = "0733D189-A746-47D6-8F91-72A483F6BD31 - e0f9625b5e57f99c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CheckUpEmployee.UserDetailsViewController.fullUser.setter : Swift.Optional&lt;CheckUpEmployee.FullUser&gt;"
-                  moduleName = "CheckUpEmployee"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "144">
-               </Location>
-               <Location
-                  uuid = "0733D189-A746-47D6-8F91-72A483F6BD31 - 526024d4ad0869d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CheckUpEmployee.UserDetailsViewController.fullUser.modify : Swift.Optional&lt;CheckUpEmployee.FullUser&gt;"
-                  moduleName = "CheckUpEmployee"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "18">
-               </Location>
-               <Location
-                  uuid = "0733D189-A746-47D6-8F91-72A483F6BD31 - b76753bf6a51d191"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CheckUpEmployee.UserDetailsViewController.fullUser.modify : Swift.Optional&lt;CheckUpEmployee.FullUser&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "CheckUpEmployee"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  uuid = "0733D189-A746-47D6-8F91-72A483F6BD31 - 22fd5cd816414336"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CheckUpEmployee.UserDetailsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; CheckUpEmployee.UserDetailsViewController"
-                  moduleName = "CheckUpEmployee"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "182">
-               </Location>
-               <Location
-                  uuid = "0733D189-A746-47D6-8F91-72A483F6BD31 - ac7fe93c7b58c7e1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CheckUpEmployee.UserDetailsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;CheckUpEmployee.UserDetailsViewController&gt;"
-                  moduleName = "CheckUpEmployee"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/UserDetails/UserCustomCells/ViewController/UserDetailsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "117">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BCE6D808-9D20-4760-B0C0-6CF449F999FA"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CheckUpEmployee/EmployeeRequests/EmployeeRequestsModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "getUserRequests()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9D6515EB-5370-41E5-8A02-2D2EC1C2A72D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CheckUpEmployee/EmployeeRequests/EmployeeRequestsVC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "numberOfSections(in:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "2BF1905A-8403-47AC-B69E-8B898F6BB4FF"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -872,10 +656,8 @@
             filePath = "CheckUpEmployee/EmployeeRequests/EmployeeRequestsVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "468"
-            endingLineNumber = "468"
-            landmarkName = "OnReceiveUserRequests(Requests:)"
-            landmarkType = "7">
+            startingLineNumber = "464"
+            endingLineNumber = "464">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -888,10 +670,10 @@
             filePath = "CheckUpEmployee/EmployeeRequests/EmployeeRequestsVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "358"
-            endingLineNumber = "358"
-            landmarkName = "hideIndicator()"
-            landmarkType = "7">
+            startingLineNumber = "363"
+            endingLineNumber = "363"
+            landmarkName = "EmployeeRequestsVC"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -904,42 +686,10 @@
             filePath = "CheckUpEmployee/EmployeeRequests/EmployeeRequestsVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "330"
-            endingLineNumber = "330"
-            landmarkName = "tableView(_:didSelectRowAt:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "78EA80DA-881B-476B-A90D-F61FC3E64AE6 - 54da6c4048d0a0b8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CheckUpEmployee.EmployeeRequestsVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
-                  moduleName = "CheckUpEmployee"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/EmployeeRequests/EmployeeRequestsVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "330"
-                  endingLineNumber = "330"
-                  offsetFromSymbolStart = "117">
-               </Location>
-               <Location
-                  uuid = "78EA80DA-881B-476B-A90D-F61FC3E64AE6 - 54da6c4048d0a0b8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CheckUpEmployee.EmployeeRequestsVC.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
-                  moduleName = "CheckUpEmployee"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Volumes/Middle/ITIContinue/FinalProject/IOS/CheckUpEmployee/CheckUpEmployee/EmployeeRequests/EmployeeRequestsVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "330"
-                  endingLineNumber = "330"
-                  offsetFromSymbolStart = "1227">
-               </Location>
-            </Locations>
+            startingLineNumber = "335"
+            endingLineNumber = "335"
+            landmarkName = "EmployeeRequestsVC"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -955,6 +705,134 @@
             startingLineNumber = "20"
             endingLineNumber = "20"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "198926AA-2AC3-41D5-888D-93E2A3138158"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/EmployeeRequests/EmployeeRequestsPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "OnFail(message:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3B7D94F6-F712-4B26-8734-61CC3826B5CE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/EmployeeRequests/EmployeeRequestsPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "OnReceiveUserRequests(Requests:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F969CB1B-58C8-4D52-A923-64B0BF3B48C3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/EmployeeRequests/EmployeeRequestsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "417"
+            endingLineNumber = "417"
+            landmarkName = "OnReceiveUserRequests(Requests:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "968DCB3C-2502-4F0F-A410-2AFB4D8798D4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/EmployeeRequests/EmployeeRequestsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "423"
+            endingLineNumber = "423"
+            landmarkName = "OnReceiveUserRequests(Requests:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE5434CB-9379-449D-B610-944B6DE25F30"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/EmployeeRequests/EmployeeRequestsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "numberOfSections(in:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF837620-07AE-40BA-891D-F31B875887B7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/EmployeeRequests/EmployeeRequestsModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "getUsersList()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D6FE5603-7BAE-4FD0-947B-FC3F00F17D34"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/EmployeeRequests/EmployeeRequestsModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "getUsersList()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0769524B-684C-4AC1-9E81-F22A35ED803D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CheckUpEmployee/EmployeeRequests/EmployeeRequestsModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "getUserRequests()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

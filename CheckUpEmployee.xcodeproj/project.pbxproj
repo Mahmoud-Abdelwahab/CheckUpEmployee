@@ -18,6 +18,7 @@
 		4E2D6CC1248ABD1300FADA05 /* ZoomToFitAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2D6CC0248ABD1300FADA05 /* ZoomToFitAnnotation.swift */; };
 		4E2D6CC4248ACCAF00FADA05 /* UIVIewGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2D6CC3248ACCAF00FADA05 /* UIVIewGradient.swift */; };
 		4E408CF0249126F700766722 /* ApiUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E408CEF249126F700766722 /* ApiUrl.swift */; };
+		4EA6DB012495D2E30027D8CD /* StyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA6DB002495D2E30027D8CD /* StyleViewController.swift */; };
 		96D3ABAC4FA71904C9AD4A54 /* Pods_CheckUpEmployee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0AAD1A20ADC73AEE4F13391 /* Pods_CheckUpEmployee.framework */; };
 		BB0631EF2487623400729573 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0631EE2487623400729573 /* Phone.swift */; };
 		BB0631F52487708100729573 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0631F42487708100729573 /* Address.swift */; };
@@ -76,6 +77,7 @@
 		4E2D6CC0248ABD1300FADA05 /* ZoomToFitAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomToFitAnnotation.swift; sourceTree = "<group>"; };
 		4E2D6CC3248ACCAF00FADA05 /* UIVIewGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewGradient.swift; sourceTree = "<group>"; };
 		4E408CEF249126F700766722 /* ApiUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrl.swift; sourceTree = "<group>"; };
+		4EA6DB002495D2E30027D8CD /* StyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleViewController.swift; sourceTree = "<group>"; };
 		5216FC7B931CF2FA8D79343F /* Pods-CheckUpEmployee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckUpEmployee.release.xcconfig"; path = "Target Support Files/Pods-CheckUpEmployee/Pods-CheckUpEmployee.release.xcconfig"; sourceTree = "<group>"; };
 		BB0631EE2487623400729573 /* Phone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
 		BB0631F42487708100729573 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 		4E2D6CBE248ABCEE00FADA05 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4EA6DAFF2495D2BC0027D8CD /* Navigation */,
 				4E191560249238BA009BAA19 /* IndicatorTableView */,
 				BB85C36E2490518700B5D5A7 /* String+Extention */,
 				4E2D6CC2248ACC9400FADA05 /* UIView */,
@@ -197,6 +200,14 @@
 				4E2D6CC3248ACCAF00FADA05 /* UIVIewGradient.swift */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		4EA6DAFF2495D2BC0027D8CD /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				4EA6DB002495D2E30027D8CD /* StyleViewController.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		5E843F87FA4CCB9490384C9B /* Pods */ = {
@@ -559,6 +570,7 @@
 				BB16C28A2485752C009503A1 /* IEmployeeRequests.swift in Sources */,
 				BB0D9175248A702A00D77EDE /* LogoutDelegate.swift in Sources */,
 				BB85C36D2490516500B5D5A7 /* String.swift in Sources */,
+				4EA6DB012495D2E30027D8CD /* StyleViewController.swift in Sources */,
 				BB16C2AE2485AE75009503A1 /* DataTableViewCell.swift in Sources */,
 				BB16C29224859560009503A1 /* IBase.swift in Sources */,
 				BB85C370249092D400B5D5A7 /* IOkAlert.swift in Sources */,

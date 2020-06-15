@@ -18,12 +18,15 @@ import MapKit
 class EmployeeRequestsVC: UITableViewController {
  
     
+    @IBAction func refreshBtn(_ sender: Any) {
+    getData()
+    }
     var userRequestsList: [FullUser]?
 
     var fromLogout:(()->())?
 
     var employeeRequestPresenter:EmployeeRequestsPresenter!
-
+    var errorMessage: String!
     //var logoutDelegate:LogoutDelegate!
     var isWaitingData = true
 //    @IBOutlet weak var activityIndicstor: UIActivityIndicatorView!
@@ -65,13 +68,15 @@ class EmployeeRequestsVC: UITableViewController {
 //        activityIndicstor.startAnimating()
         self.navigationItem.setHidesBackButton(true, animated: true)
         
+        getData()
         
-        employeeRequestPresenter = EmployeeRequestsPresenter (empRequestViewRef: self)
-
-               employeeRequestPresenter.getUserRequests()
 
     }
+    func getData() {
+        
 
+        employeeRequestPresenter.getUserRequests()
+    }
     override func viewDidLoad() {
 
         super.viewDidLoad()
@@ -80,7 +85,7 @@ class EmployeeRequestsVC: UITableViewController {
 
         userRequestsList = [FullUser]()
 
-       
+       employeeRequestPresenter = EmployeeRequestsPresenter (empRequestViewRef: self)
 
         
 
@@ -134,7 +139,7 @@ class EmployeeRequestsVC: UITableViewController {
                         {
                             numOfSections = 0
                             let noDataLabel: UILabel  = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
-                            noDataLabel.text          = "An error occured please try again"
+                            noDataLabel.text          = errorMessage.localized
                 //            noDataLabel.textColor     = UIColor.black
                             noDataLabel.textAlignment = .center
                             tableView.backgroundView  = noDataLabel
@@ -409,8 +414,11 @@ extension EmployeeRequestsVC:IEmployeeRequestsView
 {
 
     func OnReceiveUserRequests(Requests: [FullUser]) {
-
+        isWaitingData = false
         userRequestsList = Requests
+        if userRequestsList!.isEmpty {
+            errorMessage = "There is no data to show"
+        }
 
         tableView.reloadData()
 
@@ -432,7 +440,7 @@ isWaitingData = true
 
     func errorMessage(msg: String) {
 
-        
+        errorMessage = msg
 
     }
 
@@ -443,8 +451,7 @@ isWaitingData = true
     
 
     func OnFail(message: String) {
-
-      
+errorMessage = message
 
     }
 

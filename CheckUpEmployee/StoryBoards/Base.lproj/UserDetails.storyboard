@@ -101,7 +101,7 @@
                                                                             <constraint firstAttribute="height" constant="30" id="bj7-nB-DQ0"/>
                                                                         </constraints>
                                                                         <color key="tintColor" red="0.031372549019607843" green="0.72156862745098038" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <state key="normal" backgroundImage="icons8-phone-30">
+                                                                        <state key="normal" backgroundImage="Ringer Volume_100px">
                                                                             <color key="titleColor" red="0.031372549019607843" green="0.72156862745098038" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </state>
                                                                     </button>
@@ -338,7 +338,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-phone-30" width="30" height="30"/>
+        <image name="Ringer Volume_100px" width="100" height="100"/>
         <image name="users" width="512" height="512"/>
     </resources>
 </document>

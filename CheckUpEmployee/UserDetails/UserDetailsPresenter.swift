@@ -9,10 +9,10 @@
 import Foundation
 class UserDetailsPresenter: IUserDetailsPresenter ,ICheckConnection {
     var testID :Int64?
-    
+    var userId: String!
     func onSucessfullyConnected() {
         var userDetailsModel = UserDetailsModel(userDetailsPresenterRef: self)
-        userDetailsModel.updateTestStatus(testId: testID!)
+        userDetailsModel.updateTestStatus(testId: testID!, userId: userId)
         
       
     }
@@ -25,8 +25,9 @@ class UserDetailsPresenter: IUserDetailsPresenter ,ICheckConnection {
     init(userDetailsViewRef: IUserDetailsView) {
         self.userDetailsViewRef = userDetailsViewRef
     }
-    func updateTestStatus(testId: Int64) {
+    func updateTestStatus(testId: Int64, userId: String) {
         self.testID = testId
+        self.userId = userId
          var check = InternetConnection.checkInternetConnection(iCheckConnection: self)
         
     }

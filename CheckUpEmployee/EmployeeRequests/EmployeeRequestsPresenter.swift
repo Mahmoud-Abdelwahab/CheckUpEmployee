@@ -32,6 +32,7 @@ class EmployeeRequestsPresenter:IEmployeeRequestsPresenter
    
     
     func OnFail(message: String) {
+        empRequestViewRef.hideIndicator()
         
     }
     
@@ -40,16 +41,17 @@ class EmployeeRequestsPresenter:IEmployeeRequestsPresenter
     }
     
     func hideIndicator() {
-        
+//        empRequestViewRef.hideIndicator()
     }
     
     func errorMessage(msg: String) {
-        
+        empRequestViewRef.hideIndicator()
+        empRequestViewRef.errorMessage(msg: msg)
     }
     
     func onSucessfullyConnected() {
         empRequestViewRef.showIndicator()
-        var employeeRequestModel  = EmployeeRequestsModel( empRequestPresenterRef : self)
+        let employeeRequestModel  = EmployeeRequestsModel( empRequestPresenterRef : self)
         employeeRequestModel.getUserRequests()
         
     }

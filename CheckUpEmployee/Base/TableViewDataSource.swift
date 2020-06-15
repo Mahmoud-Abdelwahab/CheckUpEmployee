@@ -24,7 +24,8 @@ UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath) as! ContactTableViewCell
         
         cell.phoneNumberTxt.text = phoneList[indexPath.row].number!
-       // cell.phoneTypeImage.image = phoneList[indexPath.row].isLand == true ?  UIImage(systemName: "teletype") : UIImage(systemName: "teletype.answer")
+
+        cell.phoneTypeImage.image = phoneList[indexPath.row].isLand == true ?  UIImage(named: "Office Phone_100px") : UIImage(named: "iPhone_100px")
         cell.callBtn.tag = indexPath.row
         cell.callBtn.addTarget(self, action: #selector(callNumber), for: .touchUpInside)
         // Configure the cell...

@@ -40,14 +40,16 @@ class EmployeeRequestsModel : IEmployeeRequestsModel
         Alamofire.request(urlString, method: .get,encoding: JSONEncoding.default, headers: nil).responseString {
             response in
             
-            guard response.value != nil
-                else { return }
+//            guard response.value != nil
+//                else { return }
             print(response)
             
             do {
                 
                 let apiData =  try JSONDecoder().decode([UserIds].self, from: response.data!)
-                
+                if apiData.isEmpty == true{
+                    self.empRequestPresenterRef.OnReceiveUserRequests(Requests: [] )
+                }
                 for item in apiData
                 {
                     var fullUser = FullUser()
@@ -98,8 +100,8 @@ class EmployeeRequestsModel : IEmployeeRequestsModel
             else{
                 
                 //** * * here if no requests for employee do somthing  ** ** * * * * *  //
-                empRequestPresenterRef.OnFail(message: "No Requests For you ")
-                
+//                empRequestPresenterRef.OnFail(message: "No Requests For you ")
+                self.empRequestPresenterRef.OnReceiveUserRequests(Requests: [] )
                 return
         }
         
@@ -143,6 +145,7 @@ class EmployeeRequestsModel : IEmployeeRequestsModel
                     if counter >= userRequestsListExists.count{
                         self.empRequestPresenterRef.OnReceiveUserRequests(Requests: self.userRequestsList ?? [] )
                     }
+                   
                     
                 } catch let error {
                     print("error converting \(error)")

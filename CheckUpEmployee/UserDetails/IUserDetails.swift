@@ -15,13 +15,13 @@ protocol  IUserDetailsView {
 }
 
 protocol  IUserDetailsPresenter:ICheckConnection  {
-    func updateTestStatus(testId : Int64)
+    func updateTestStatus(testId : Int64, userId: String)
     func onSuccess()
     func OnFail(message :String)
 }
 
 protocol  IUserDetailsModel  {
-    func updateTestStatus(testId : Int64)
+    func updateTestStatus(testId : Int64, userId: String)
     //  i think that no need for model here
     // i might use presenter only to do my logic
 }

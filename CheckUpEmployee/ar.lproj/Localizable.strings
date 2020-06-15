@@ -15,3 +15,4 @@
 "UPDATED_FAILED_TITLE" = "تنبية" ;
 "UPDATED_FAILED_MSG" = "حدث خطأ ما من فضلك حاول مرة اخرى " ;
 "NO_INTERNET_CONNECTION" = "لا يوجد إتصال بالإنترنت ";
+"There is no data to show" = "لا يوجد بيانات";

@@ -115,7 +115,7 @@ func showIndicator() {
        self.activityIndicatore.isHidden = false
         activityIndicatore.startAnimating()
           let userDetailsPresenter = UserDetailsPresenter( userDetailsViewRef: self)
-        userDetailsPresenter.updateTestStatus(testId: fullUser.TestId!)
+        userDetailsPresenter.updateTestStatus(testId: fullUser.TestId!, userId: fullUser.UserId!)
     }
     
     func pressCancel() {
